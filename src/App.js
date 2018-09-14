@@ -4,21 +4,6 @@ import './App.css';
 import styled from 'styled-components';
 import TimeSlot from './TimeSlot';
 
-// const StyledSvg = styled.svg`
-//   position: absolute;
-//   margin: auto;
-//   padding-left: 100px;
-//   color: white;
-//   z-index: -1;
-//   // width: 100%;
-//   height: 100%;
-// `;
-
-// const Time = () =>
-//   <svg viewBox="0 0 56 18">
-//     <text x="0" y="15">Fit Me</text>
-//   </svg>
-
 const LogoWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -83,11 +68,7 @@ class App extends Component {
                 },
               ]}
             />
-            <TimeSlot
-              time="12:15"
-              leisure="Developer Survey QA"
-              // lectures={[{ name: 'Developer Survey QA' }]}
-            />
+            <TimeSlot time="12:15" leisure="Developer Survey QA" />
             <TimeSlot time="13:00" leisure="Lunch" />
             <TimeSlot
               time="14:15"
