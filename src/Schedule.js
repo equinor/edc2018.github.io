@@ -1,18 +1,7 @@
 import React, { Component } from 'react';
-import logo from './equinor-logo.png';
-import './App.css';
 import styled from 'styled-components';
 import TimeSlot from './TimeSlot';
-
-const LogoWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-
-const HeaderTitle = styled.h1`
-  font-size: 3em;
-  color: #ec384a;
-`;
+import Header from './Header';
 
 const DaySchedule = styled.div`
   display: flex;
@@ -28,19 +17,16 @@ const DaySchedule = styled.div`
 const DayHeader = styled.h2`
   padding: 30px 0px;
   margin: 0px;
+  color: rgb(26, 108, 118);
 `;
 
 class Schedule extends Component {
   render() {
+    console.log('this.props', this.props);
     return (
-      <div className="App">
-        <header className="App-header">
-          <LogoWrapper>
-            <img src={logo} className="App-logo" alt="logo" />
-          </LogoWrapper>
-          <HeaderTitle>Equinor Developer Conference 2018</HeaderTitle>
-        </header>
-        <body>
+      <div>
+        <Header location={this.props.location} />
+        <div>
           <DaySchedule>
             <DayHeader>Day 1 — Tuesday September 25</DayHeader>
             <TimeSlot
@@ -48,6 +34,7 @@ class Schedule extends Component {
               heading="Keynote"
               lectures={[
                 {
+                  id: '1',
                   title:
                     'Five things every developer should know about software architecture',
                   lecturer: 'Simon Brown',
@@ -68,7 +55,10 @@ class Schedule extends Component {
                 },
               ]}
             />
-            <TimeSlot time="12:15" leisure="Developer Survey QA" />
+            <TimeSlot
+              time="12:15"
+              lectures={[{ title: 'Developer Survey QA' }]}
+            />
             <TimeSlot time="13:00" leisure="Lunch" />
             <TimeSlot
               time="14:15"
@@ -231,10 +221,10 @@ class Schedule extends Component {
               ]}
             />
             <TimeSlot time="13:00" leisure="Lunch" />
-            <TimeSlot time="14:15" leisure="Summary" />
+            <TimeSlot time="14:15" heading="Summary" />
             <TimeSlot time="15:00" leisure="EOC" />
           </DaySchedule>
-        </body>
+        </div>
       </div>
     );
   }
