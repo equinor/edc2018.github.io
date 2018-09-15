@@ -39,7 +39,7 @@ const Lecture = styled.div`
   padding: 0px 20px;
 `;
 
-const LectureName = styled.p``;
+const LectureTitle = styled.p``;
 
 const Lecturer = styled.p`
   font-size: 0.8em;
@@ -65,9 +65,9 @@ const TimeSlot = ({ time, heading, lectures, leisure }) => (
     {heading && <TimeSlotHeading>{heading}</TimeSlotHeading>}
     {lectures && (
       <Lectures>
-        {lectures.map(({ name, lecturer }) => (
+        {lectures.map(({ title, lecturer }) => (
           <Lecture>
-            <LectureName>{name}</LectureName>
+            <LectureTitle>{title}</LectureTitle>
             {lecturer && <Lecturer>{lecturer}</Lecturer>}
           </Lecture>
         ))}
