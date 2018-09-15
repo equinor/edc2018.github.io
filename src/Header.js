@@ -6,6 +6,16 @@ import { Link } from 'react-router-dom';
 const HeaderTitle = styled.h1`
   font-size: 3em;
   color: #ec384a;
+  @media (min-width: 1100px) {
+    ::before {
+      content: 'Equinor Developer Conference ';
+    }
+  }
+  @media (max-width: 1099px) {
+    ::before {
+      content: 'EDC ';
+    }
+  }
 `;
 
 const Logo = styled.img`
@@ -72,7 +82,7 @@ const Header = ({ location }) => (
       </NavBar>
     </NavWrapper>
     <HeaderWrapper>
-      <HeaderTitle>Equinor Developer Conference 2018</HeaderTitle>
+      <HeaderTitle>2018</HeaderTitle>
       <Logo src={logo} alt="Equnior logo" />
     </HeaderWrapper>
   </StyledHeader>

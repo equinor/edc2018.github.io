@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import lectures from './lectures.js';
+import { lectures } from './data.js';
 import Header from './Header';
 
 const Wrapper = styled.div`
@@ -17,9 +17,19 @@ const Description = styled.p`
   line-height: 1.4;
 `;
 
-const Time = styled.p``;
+const ConferenceDay = styled.p`
+  margin: 0px;
+`;
 
-const Day = styled.p``;
+const Time = styled.p`
+  margin: 0px 0px 0px 2px;
+  ::before {
+    content: '@ [';
+  }
+  ::after {
+    content: ']';
+  }
+`;
 
 const Category = styled.h2`
   color: #ec384a;
@@ -37,7 +47,7 @@ const What = styled.div`
   display: flex;
 `;
 
-const Where = styled.div`
+const When = styled.div`
   display: flex;
 `;
 
@@ -47,8 +57,8 @@ const Lecture = ({ match, location }) => {
     title,
     lecturer,
     description,
+    conferenceDay,
     timeSlot,
-    day,
     category,
   } = lectures.find(lecture => lecture.id === id);
   return (
@@ -59,10 +69,10 @@ const Lecture = ({ match, location }) => {
           <Category>{category}</Category>
           <Title>{title}</Title>
         </What>
-        <Where>
+        <When>
+          <ConferenceDay>{conferenceDay}</ConferenceDay>
           <Time>{timeSlot}</Time>
-          <Day>{day}</Day>
-        </Where>
+        </When>
         <Lecturer>{lecturer}</Lecturer>
         <Description>{description}</Description>
       </Wrapper>

@@ -59,12 +59,16 @@ const TimeSlot = ({ time, heading, lectures, leisure }) => (
     {heading && <TimeSlotHeading>{heading}</TimeSlotHeading>}
     <InnerWrapper fullHeight={!heading}>
       {lectures &&
-        lectures.map(({ id, title, lecturer }) => (
-          <Lecture key={id}>
-            <StyledLink to={`/lecture/${id}/`}>
+        lectures.map(({ id, title, lecturer, shortTitle, company }) => (
+          <Lecture key={id || shortTitle || title}>
+            {id ? (
+              <StyledLink to={`/lecture/${id}/`}>
+                <LectureTitle>{shortTitle || title}</LectureTitle>
+              </StyledLink>
+            ) : (
               <LectureTitle>{title}</LectureTitle>
-            </StyledLink>
-            {lecturer && <Lecturer>{lecturer}</Lecturer>}
+            )}
+            {lecturer && <Lecturer>{company || lecturer}</Lecturer>}
           </Lecture>
         ))}
       {leisure && <Leisure>{leisure}</Leisure>}
