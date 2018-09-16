@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { events } from './data.js';
 import Header from './Header.js';
-import { Page } from './Components.js';
 
 const Wrapper = styled.div`
   margin: 20px;
@@ -58,7 +57,7 @@ const Event = ({ match, location }) => {
     e => e.id === id
   );
   return (
-    <Page>
+    <div>
       <Header location={location} />
       <Wrapper>
         <What>
@@ -74,7 +73,7 @@ const Event = ({ match, location }) => {
         <Speaker>{speaker}</Speaker>
         <Description>{description}</Description>
       </Wrapper>
-    </Page>
+    </div>
   );
 };
 

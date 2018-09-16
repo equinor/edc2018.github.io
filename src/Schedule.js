@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import TimeSlot from './TimeSlot';
 import Header from './Header';
 import { schedule } from './data.js';
-import { Page } from './Components';
 
 const DaySchedule = styled.div`
   display: flex;
@@ -25,7 +24,7 @@ const DayHeader = styled.h2`
 class Schedule extends Component {
   render() {
     return (
-      <Page>
+      <div>
         <Header location={this.props.location} />
         <div>
           {schedule.map(({ conferenceDay, timeSlots }) => (
@@ -43,7 +42,7 @@ class Schedule extends Component {
             </DaySchedule>
           ))}
         </div>
-      </Page>
+      </div>
     );
   }
 }

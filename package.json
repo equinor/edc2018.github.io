@@ -2,11 +2,13 @@
   "name": "edc2018",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edc2018.github.io",
   "dependencies": {
     "eslint": "^5.5.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^1.2.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-router-dom": "^4.3.1",
@@ -14,6 +16,8 @@
     "styled-components": "^3.4.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
