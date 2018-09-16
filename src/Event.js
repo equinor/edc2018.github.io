@@ -8,7 +8,9 @@ const Wrapper = styled.div`
   text-align: left;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  margin: 0px;
+`;
 
 const Speaker = styled.h3``;
 
@@ -45,6 +47,8 @@ const Category = styled.h2`
 const What = styled.div`
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
 `;
 
 const When = styled.div`
