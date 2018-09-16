@@ -4,13 +4,11 @@ import { events } from './data.js';
 import Header from './Header.js';
 
 const Wrapper = styled.div`
-  margin: 20px;
+  margin: 0px 20px;
   text-align: left;
 `;
 
-const Title = styled.h2`
-  margin: 0px;
-`;
+const Title = styled.h2``;
 
 const Speaker = styled.h3``;
 
@@ -35,7 +33,7 @@ const Time = styled.p`
 
 const Category = styled.h2`
   color: #ec384a;
-  margin-right: 10px;
+  margin: 0px 10px 0px 0px;
   ::before {
     content: '<';
   }
@@ -47,7 +45,7 @@ const Category = styled.h2`
 const What = styled.div`
   margin-top: 50px;
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
 `;
 
