@@ -16,10 +16,16 @@ const HeaderTitle = styled.h1`
       content: 'EDC ';
     }
   }
+  @media (max-width: 500px) {
+    font-size: 2em;
+  }
 `;
 
 const Logo = styled.img`
   height: 80px;
+  @media (max-width: 500px) {
+    height: 40px;
+  }
 `;
 
 const HeaderWrapper = styled.div`

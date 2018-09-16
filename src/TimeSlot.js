@@ -22,6 +22,7 @@ const InnerWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   ${({ fullHeight }) =>
     fullHeight &&
     `
