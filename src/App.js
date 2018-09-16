@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Schedule from './Schedule';
-import Lecture from './Lecture';
+import Event from './Event';
 
 const App = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Schedule} />
-      <Route path="/lecture/:id/" component={Lecture} />
+      <Route path="/event/:id/" component={Event} />
     </Switch>
   </BrowserRouter>
 );

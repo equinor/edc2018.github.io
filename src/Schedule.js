@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import TimeSlot from './TimeSlot';
 import Header from './Header';
 import { schedule } from './data.js';
+import { Page } from './Components';
 
 const DaySchedule = styled.div`
   display: flex;
@@ -24,25 +25,25 @@ const DayHeader = styled.h2`
 class Schedule extends Component {
   render() {
     return (
-      <div>
+      <Page>
         <Header location={this.props.location} />
         <div>
           {schedule.map(({ conferenceDay, timeSlots }) => (
             <DaySchedule key={conferenceDay}>
               <DayHeader>{conferenceDay}</DayHeader>
-              {timeSlots.map(({ time, heading, lectures, leisure }) => (
+              {timeSlots.map(({ time, heading, events, leisure }) => (
                 <TimeSlot
                   key={`${conferenceDay} ${time}`}
                   time={time}
                   heading={heading}
-                  lectures={lectures}
+                  events={events}
                   leisure={leisure}
                 />
               ))}
             </DaySchedule>
           ))}
         </div>
-      </div>
+      </Page>
     );
   }
 }

@@ -4,15 +4,14 @@ import { Link } from 'react-router-dom';
 
 const Wrapper = styled.section`
   position: relative;
-  height: 140px;
 `;
 
 const Time = styled.h3`
   position: absolute;
   margin: auto;
-  padding: 10px 0px 0px 100px;
+  padding: 10px 0px 0px 20px;
   color: rgb(12, 93, 103);
-  font-size: 3em;
+  font-size: 1.5em;
 `;
 
 const TimeSlotHeading = styled.h4`
@@ -31,13 +30,20 @@ const InnerWrapper = styled.div`
   `};
 `;
 
-const Lecture = styled.div`
+const EventWrapper = styled.div`
   padding: 0px 20px;
 `;
 
-const LectureTitle = styled.p``;
+const EventTitle = styled.p`
+  ${({ highlighted }) =>
+    highlighted &&
+    `
+    color: #ec384a;
+    font-weight: bold;
+  `};
+`;
 
-const Lecturer = styled.p`
+const Speaker = styled.p`
   font-size: 0.8em;
   font-style: oblique;
   color: gray;
@@ -46,32 +52,33 @@ const Lecturer = styled.p`
   }
 `;
 
-const Leisure = styled.p``;
-
 const StyledLink = styled(Link)`
   text-decoration: None;
   color: black;
 `;
 
-const TimeSlot = ({ time, heading, lectures, leisure }) => (
+const TimeSlot = ({ time, heading, events }) => (
   <Wrapper>
     <Time>{time}</Time>
     {heading && <TimeSlotHeading>{heading}</TimeSlotHeading>}
     <InnerWrapper fullHeight={!heading}>
-      {lectures &&
-        lectures.map(({ id, title, lecturer, shortTitle, company }) => (
-          <Lecture key={id || shortTitle || title}>
-            {id ? (
-              <StyledLink to={`/lecture/${id}/`}>
-                <LectureTitle>{shortTitle || title}</LectureTitle>
-              </StyledLink>
-            ) : (
-              <LectureTitle>{title}</LectureTitle>
-            )}
-            {lecturer && <Lecturer>{company || lecturer}</Lecturer>}
-          </Lecture>
-        ))}
-      {leisure && <Leisure>{leisure}</Leisure>}
+      {events &&
+        events.map(
+          ({ id, title, speaker, shortTitle, company, highlighted }) => (
+            <EventWrapper key={id || shortTitle || title}>
+              {id ? (
+                <StyledLink to={`/event/${id}/`}>
+                  <EventTitle highlighted={highlighted}>
+                    {shortTitle || title}
+                  </EventTitle>
+                </StyledLink>
+              ) : (
+                <EventTitle highlighted={highlighted}>{title}</EventTitle>
+              )}
+              {speaker && <Speaker>{company || speaker}</Speaker>}
+            </EventWrapper>
+          )
+        )}
     </InnerWrapper>
   </Wrapper>
 );

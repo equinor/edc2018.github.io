@@ -51,17 +51,14 @@ const NavWrapper = styled.div`
 
 const NavBar = styled.div``;
 
-/* <ScheduleLink to="/">Schedule</ScheduleLink> */
-
 const Header = ({ location }) => (
   <StyledHeader>
-    {/* <div style={{ width: '200px' }}> </div> */}
     <NavWrapper>
       <NavBar>
         <ScheduleLink selected={location.pathname === '/'} to="/">
           Schedule
         </ScheduleLink>
-        <ScheduleLink
+        {/* <ScheduleLink
           selected={location.pathname === '/keynotes/'}
           to="/keynotes/"
         >
@@ -78,7 +75,7 @@ const Header = ({ location }) => (
           to="/workshops/"
         >
           Workshops
-        </ScheduleLink>
+        </ScheduleLink> */}
       </NavBar>
     </NavWrapper>
     <HeaderWrapper>

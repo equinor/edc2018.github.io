@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { lectures } from './data.js';
-import Header from './Header';
+import { events } from './data.js';
+import Header from './Header.js';
+import { Page } from './Components.js';
 
 const Wrapper = styled.div`
   margin: 20px;
@@ -10,14 +11,14 @@ const Wrapper = styled.div`
 
 const Title = styled.h2``;
 
-const Lecturer = styled.h3``;
+const Speaker = styled.h3``;
 
 const Description = styled.p`
   max-width: 900px;
   line-height: 1.4;
 `;
 
-const ConferenceDay = styled.p`
+const Day = styled.p`
   margin: 0px;
 `;
 
@@ -51,33 +52,30 @@ const When = styled.div`
   display: flex;
 `;
 
-const Lecture = ({ match, location }) => {
+const Event = ({ match, location }) => {
   const { id } = match.params;
-  const {
-    title,
-    lecturer,
-    description,
-    conferenceDay,
-    timeSlot,
-    category,
-  } = lectures.find(lecture => lecture.id === id);
+  const { title, speaker, description, timeSlots, category } = events.find(
+    e => e.id === id
+  );
   return (
-    <div>
+    <Page>
       <Header location={location} />
       <Wrapper>
         <What>
           <Category>{category}</Category>
           <Title>{title}</Title>
         </What>
-        <When>
-          <ConferenceDay>{conferenceDay}</ConferenceDay>
-          <Time>{timeSlot}</Time>
-        </When>
-        <Lecturer>{lecturer}</Lecturer>
+        {timeSlots.map(({ time, day }) => (
+          <When key={`${day}@${time}`}>
+            <Day>{day}</Day>
+            <Time>{time}</Time>
+          </When>
+        ))}
+        <Speaker>{speaker}</Speaker>
         <Description>{description}</Description>
       </Wrapper>
-    </div>
+    </Page>
   );
 };
 
-export default Lecture;
+export default Event;
