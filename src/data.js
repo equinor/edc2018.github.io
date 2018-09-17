@@ -434,6 +434,7 @@ export const events = [
     title: 'Radix half day Workshop',
     shortTitle: 'Radix',
     speaker: '',
+    color: '#EE4035',
     description: 'TODO: Insert description here!!',
     timeSlots: [
       {
@@ -449,6 +450,7 @@ export const events = [
     title: 'Agile Workshop',
     shortTitle: 'Agile',
     speaker: SPEAKERS.KNUT_KVARME,
+    color: '#EE4035',
     description: 'TODO: Insert description here!!',
     timeSlots: [
       {
@@ -550,7 +552,7 @@ export const schedule = [
           { ...getLecture(IDS.UNREAL_ENGINE), part: '1 of 3' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '1 of 3' },
-          getLecture(IDS.RADIX),
+          { ...getLecture(IDS.RADIX), part: '1 of 1' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '1 of 3' },
         ],
       },
@@ -561,13 +563,13 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['14:15'],
-        heading: 'Workshops continued',
+        heading: HEADINGS.WORKSHOPS,
         events: [
           { ...getLecture(IDS.MICRO_PYTHON), part: '2 of 3' },
           { ...getLecture(IDS.UNREAL_ENGINE), part: '2 of 3' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '2 of 3' },
-          getLecture(IDS.AGILE),
+          { ...getLecture(IDS.AGILE), part: '1 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '2 of 3' },
         ],
       },
@@ -596,9 +598,9 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MICRO_PYTHON), part: '3 of 3' },
           { ...getLecture(IDS.UNREAL_ENGINE), part: '3 of 3' },
-          { title: 'Hackathon' },
+          { title: 'Hackathon', color: '#03D1AB', part: '1 of 1' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '3 of 3' },
-          getLecture(IDS.AGILE),
+          { ...getLecture(IDS.AGILE), part: '2 of 2' },
           { ...getLecture(IDS.DESIGN_SPRINT), part: '3 of 3' },
         ],
       },

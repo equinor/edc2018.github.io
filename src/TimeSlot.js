@@ -105,11 +105,11 @@ const TimeSlot = ({ time, heading, events, background }) => (
                   >
                     {shortTitle || title}
                   </EventTitle>
-                  {part && <Part color={color}>{part}</Part>}
                 </StyledLink>
               ) : (
                 <EventTitle color={color}>{title}</EventTitle>
               )}
+              {part && <Part color={color}>{part}</Part>}
               {speaker && <Speaker>{company || speaker}</Speaker>}
             </EventWrapper>
           )
