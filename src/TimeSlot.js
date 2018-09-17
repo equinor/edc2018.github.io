@@ -25,13 +25,13 @@ const Wrapper = styled.section`
 const Time = styled.h3`
   position: absolute;
   margin: auto;
-  padding: 10px 0px 0px 20px;
+  padding: 20px 0px 0px 20px;
   font-family: 'Oswald', sans-serif;
   color: darkslategray;
   @media (max-width: 600px) {
     position: static;
     padding: 0px;
-    margin: 20px 20px 0px 20px;
+    margin: 20px 0px 0px 20px;
   }
   ::before {
     content: '[';
@@ -43,7 +43,10 @@ const Time = styled.h3`
 
 const TimeSlotHeading = styled.h3`
   color: #ec384a;
-  margin: 20px 20px;
+  margin: 20px 10px;
+  @media (max-width: 600px) {
+    width: 50%;
+  }
 `;
 
 const InnerWrapper = styled.div`
@@ -65,11 +68,11 @@ const InnerWrapper = styled.div`
 `;
 
 const EventWrapper = styled.div`
-  padding: 0px 20px;
+  margin: 10px 20px;
 `;
 
 const EventTitle = styled.p`
-  line-height: 1;
+  line-height: 1.3;
   font-weight: bold;
   margin: 0px;
   ${({ underline }) =>
@@ -88,25 +91,19 @@ const EventTitle = styled.p`
   `};
 `;
 
-const Speaker = styled.p`
-  font-size: 0.8em;
-  font-style: oblique;
-  color: gray;
-  ::before {
-    content: '– ';
-  }
-`;
-
 const StyledLink = styled(Link)`
   text-decoration: None;
   color: black;
 `;
 
-const Part = styled.p`
+const Speaker = styled.p`
   font-size: 0.8em;
   font-style: oblique;
-  margin: 5px;
+  margin: 0px;
   color: ${({ color }) => color || 'gray'};
+  ::before {
+    content: '– ';
+  }
 `;
 
 const TimeSlot = ({ time, heading, events, background }) => (
@@ -125,14 +122,19 @@ const TimeSlot = ({ time, heading, events, background }) => (
                     underline={id && !part}
                     heavyUnderline={id && part}
                   >
-                    {shortTitle || title}
+                    {part
+                      ? `${shortTitle || title} ( ${part} )`
+                      : shortTitle || title}
                   </EventTitle>
                 </StyledLink>
               ) : (
-                <EventTitle color={color}>{title}</EventTitle>
+                <EventTitle color={color}>
+                  {part
+                    ? `${shortTitle || title} ( ${part} )`
+                    : shortTitle || title}
+                </EventTitle>
               )}
-              {part && <Part color={color}>{part}</Part>}
-              {speaker && <Speaker>{company || speaker}</Speaker>}
+              {speaker && <Speaker color={color}>{company || speaker}</Speaker>}
             </EventWrapper>
           )
         )}
