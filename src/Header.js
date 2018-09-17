@@ -19,12 +19,18 @@ const HeaderTitle = styled.h1`
   @media (max-width: 500px) {
     font-size: 2em;
   }
+  @media (max-width: 400px) {
+    font-size: 1.7em;
+  }
 `;
 
 const Logo = styled.img`
   height: 80px;
   @media (max-width: 500px) {
-    height: 40px;
+    height: 50px;
+  }
+  @media (max-width: 400px) {
+    height: 45px;
   }
 `;
 
@@ -64,24 +70,6 @@ const Header = ({ location }) => (
         <ScheduleLink selected={location.pathname === '/'} to="/">
           Schedule
         </ScheduleLink>
-        {/* <ScheduleLink
-          selected={location.pathname === '/keynotes/'}
-          to="/keynotes/"
-        >
-          Keynotes
-        </ScheduleLink>
-        <ScheduleLink
-          selected={location.pathname === '/lectures/'}
-          to="/lectures/"
-        >
-          Lectures
-        </ScheduleLink>
-        <ScheduleLink
-          selected={location.pathname === '/workshops/'}
-          to="/workshops/"
-        >
-          Workshops
-        </ScheduleLink> */}
       </NavBar>
     </NavWrapper>
     <HeaderWrapper>

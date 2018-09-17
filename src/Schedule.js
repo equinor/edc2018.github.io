@@ -53,15 +53,18 @@ class Schedule extends Component {
                 <ConferenceDay>{conferenceDay}</ConferenceDay>
                 <CalendarDate>{calendarDate}</CalendarDate>
               </DayWrapper>
-              {timeSlots.map(({ time, heading, events, leisure }) => (
-                <TimeSlot
-                  key={`${conferenceDay} ${time}`}
-                  time={time}
-                  heading={heading}
-                  events={events}
-                  leisure={leisure}
-                />
-              ))}
+              {timeSlots.map(
+                ({ time, heading, events, leisure, background }) => (
+                  <TimeSlot
+                    key={`${conferenceDay} ${time}`}
+                    time={time}
+                    heading={heading}
+                    events={events}
+                    leisure={leisure}
+                    background={background}
+                  />
+                )
+              )}
             </DaySchedule>
           ))}
         </div>

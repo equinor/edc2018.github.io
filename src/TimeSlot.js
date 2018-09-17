@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Wrapper = styled.section`
   position: relative;
+  ${({ background }) =>
+    background &&
+    `
+    background: ${`${background} !important`};
+  `};
 `;
 
 const Time = styled.h3`
@@ -12,13 +17,14 @@ const Time = styled.h3`
   padding: 10px 0px 0px 20px;
   color: rgb(12, 93, 103);
   font-size: 1.5em;
+  font-family: monospace;
   @media (max-width: 500px) {
     padding: 10px 0px 0px 10px;
     font-size: 1em;
   }
 `;
 
-const TimeSlotHeading = styled.h4`
+const TimeSlotHeading = styled.h3`
   color: #ec384a;
 `;
 
@@ -41,11 +47,20 @@ const EventWrapper = styled.div`
 `;
 
 const EventTitle = styled.p`
-  ${({ highlighted }) =>
-    highlighted &&
+  line-height: 1;
+  font-weight: bold;
+  margin: 0px;
+  ${({ underline }) =>
+    underline &&
     `
-    color: #ec384a;
-    font-weight: bold;
+    text-decoration: underline;
+  `} ${({ color }) =>
+    color &&
+    `
+    color: ${color};
+    text-decoration: none;
+    border-bottom: 5px solid ${color};
+    display: inline-block;
   `};
 `;
 
@@ -63,23 +78,31 @@ const StyledLink = styled(Link)`
   color: black;
 `;
 
-const TimeSlot = ({ time, heading, events }) => (
-  <Wrapper>
+const Part = styled.p`
+  font-size: 0.8em;
+  font-style: oblique;
+  margin: 5px;
+  color: ${({ color }) => color || 'gray'};
+`;
+
+const TimeSlot = ({ time, heading, events, background }) => (
+  <Wrapper background={background}>
     <Time>{time}</Time>
     {heading && <TimeSlotHeading>{heading}</TimeSlotHeading>}
     <InnerWrapper fullHeight={!heading}>
       {events &&
         events.map(
-          ({ id, title, speaker, shortTitle, company, highlighted }) => (
+          ({ id, title, speaker, shortTitle, company, color, part }) => (
             <EventWrapper key={id || shortTitle || title}>
               {id ? (
                 <StyledLink to={`/event/${id}/`}>
-                  <EventTitle highlighted={highlighted}>
+                  <EventTitle color={color} underline={id}>
                     {shortTitle || title}
                   </EventTitle>
+                  {part && <Part color={color}>{part}</Part>}
                 </StyledLink>
               ) : (
-                <EventTitle highlighted={highlighted}>{title}</EventTitle>
+                <EventTitle color={color}>{title}</EventTitle>
               )}
               {speaker && <Speaker>{company || speaker}</Speaker>}
             </EventWrapper>

@@ -64,6 +64,12 @@ const CALENDAR_DATE = {
   THURSDAY: 'Thursday September 27',
 };
 
+const colorPalette = {
+  green: '#f0fff5',
+  blue: '#e9f5f9',
+  pink: '#f9ecf2',
+};
+
 const IDS = {
   KEYNOTE_SOFTWARE_ACRHITECTURE: 'keynote_software_architecture',
   ELIXIR: 'elixir',
@@ -299,6 +305,7 @@ export const events = [
     title: 'MicroPython',
     shortTitle: 'μPython',
     speaker: SPEAKERS.SEBASTIAN_ROLL,
+    color: '#844D9E',
     description:
       'MicroPython is a Python implementation for embedded processors. This two day workshop will cover the MicroPython language and how to use it for your very own IoT project. Each participant will be provided with a powerful ESP32 microcontroller and a wide range of fun components to use. Cooperation is encouraged!\nSome examples of what we might create together:\n• mp3 player \n• remote controlled car \n• gamepad \n• NFC tag reader \n• handheld web server \n• MQTT-connected sensor\nFrom the experienced to the aspiring, this workshop should suit everyone. Please bring your laptop.',
     timeSlots: [
@@ -325,6 +332,7 @@ export const events = [
     title: 'Unreal Engine',
     subtitle: 'Let’s make games with Unreal Engine!',
     speaker: SPEAKERS.JENS_G_MAGNUS,
+    color: '#EE3769',
     description:
       'This workshop is a combination of a tutorial and hackathon. We will go over everything you need to make simple games.\nThis includes\n• The Unreal Engine Editor \n• Programming in Blueprint(Unreal’s visual programming language) \n• Important gameplay classes \n• Materials During the tutorial section of the workshop we will learn by introducing new gameplay elements to template games provided by the engine. When we’re done with that it’s time to get creative!We will use what we’re learned to create our own games.\nUnreal Engine 4 is a powerful tool. The engine can be modified, extended and scripted with C++; something we might touch upon if there is time. It supports VR / AR with all mainstream hardware.\nWorkshop requirements:\n• Somewhat beefy computer, the editor is heavy (but the standard laptop works) \n• UnrealEnginelicense, it’s free, you just need to register at https://www.unrealengine.com \n• Preferably with the Unreal Engine installed\n\t– Do this before the workshop as the installation is at minimum 7GB \n\t– If you run Linux, you need to build the engine from source, this requires a newer version of make, clang, and mono.',
     timeSlots: [
@@ -351,6 +359,7 @@ export const events = [
     title: 'Intermediate Python',
     speaker: SPEAKERS.ROBERT_SMALLSHIRE,
     company: 'Sixty North v/ Robert Smallshire',
+    color: '#367ABD',
     description:
       'This two day course is designed for developers who already know the funda- mentals of Python. This course will get more ”under the hood” and introduce the students to powerful tools and techniques that go beyond the basics. There are a lot of intermediate topics in Python, and this course can be customized based on need. The class will focus on Python 3 unless Python 2 is specifically requested. \n• We start immediately with working programs. \n• Testing is integral to our approach. \n• Taught on Windows, Linux or Mac OS X. \n• Knowledge level of Python for Programmers course is assumed\nTopics \n• Function and class decorators \n• Closures \n• Creating context managers \n• Packaging and distribution of Python packages \n• Callable objects, lambdas, and extended argument syntax \n• Properties, class methods, and static methods \n• String representations of objects \n• Specialized numeric and scalar types \n• Functional-style programming tools \n• The iteration and iterable protocols \n• Multiple inheritance, method resolution order, and super() \n• Collection protocols and implementing collections \n• Advanced error handling with exceptions \n• Introspection\nComputer Setup:\nThis workshop requires that you bring a laptop with the following software installed: \n• Python 3.3 or greater installed. \n• An editor for Python code.Attendees can use whatever editor they prefer, but we recommend PyCharm which is a full - featured Python IDE \n• The ability to either connect to the Internet or accept USB flash drives so we can distribute course materials on the day.',
     timeSlots: [
@@ -376,6 +385,7 @@ export const events = [
     id: IDS.C_PLUS_PLUS,
     title: 'A Tour of Modern C++',
     speaker: SPEAKERS.OLVE_MAUDAL,
+    color: '#03D1AB',
     description:
       'In this fast-paced course we will start from scratch and relearn C++ with modern syntax and semantics.\nAmong other things you will learn(at least something) about:\n• rvalues and move semantics \n• how to write and understand templates \n• function objects and lambda expressions \n• decltype, auto and type deduction in general \n• exception handling and exception safety \n• ”mystical” stuff like ADL, RAII and SFINAE \n• futures, promises and higher-order parallelism \n• concepts and type traits \n• iterators, smart pointers and object lifetimes \n• using the standard library effectively \n• misc do’s and don’ts in modern C++ \n• modern design principles and how to write solid code \n• C++11, C++14 and new stuff coming with C++17 and later\nThis course is aimed at experienced programmers that would like to learn how to write, or at least understand, modern C++.Ideally you should have some experience with either C, old-school C++, Python and / or Java.',
     timeSlots: [
@@ -397,6 +407,7 @@ export const events = [
     title: 'Google Design Sprint',
     speaker: SPEAKERS.KRISTIN_WULFF,
     company: 'Kantega v/ Kristin Wulff',
+    color: '#f58db6',
     description:
       'Get to know a practical, and time boxed implementation of Design Thinking from Google Ventures. The methodical five days approach, forces the team to explore a vast space of ideas, and assist you in quickly narrowing them down to the one you really want to test on your users. An agile approach to the design phase, that allows your team to fail fast and shortcuts the idea→learning feedback loop. Do you think we could be more curious and creative in the earlier stages of our projects. Do you think that our projects are agile in name, but not always in practice. Or have you at some point simply experienced that the code you were writing, was an excellent answer, but sadly for the wrong question. Then join in for three×three hours of fun, a new perspective on the design phase, and a pocket full of ideation activities and practices for you and your team.\nPrimarily for: Everyone\nParticipant requirements: Their head and hands.',
     timeSlots: [
@@ -484,7 +495,8 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['13:00'],
-        events: [{ title: 'Lunch' }],
+        events: [{ title: 'Lunch', color: '#56B949' }],
+        background: '#ffffff',
       },
       {
         time: TIME_SLOTS['14:15'],
@@ -508,7 +520,13 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['19:00'],
-        events: [{ title: 'Dinner and quiz, delicious tapas and drinks' }],
+        events: [
+          {
+            title: 'Dinner and quiz, delicious tapas and drinks',
+            color: '#56B949',
+          },
+        ],
+        background: '#ffffff',
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -529,28 +547,29 @@ export const schedule = [
         time: TIME_SLOTS['10:15'],
         heading: HEADINGS.WORKSHOPS,
         events: [
-          getLecture(IDS.MICRO_PYTHON),
-          getLecture(IDS.UNREAL_ENGINE),
-          getLecture(IDS.C_PLUS_PLUS),
-          getLecture(IDS.INTERMEDIATE_PYTHON),
+          { ...getLecture(IDS.MICRO_PYTHON), part: '1 of 3' },
+          { ...getLecture(IDS.UNREAL_ENGINE), part: '1 of 3' },
+          { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
+          { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '1 of 3' },
           getLecture(IDS.RADIX),
-          getLecture(IDS.DESIGN_SPRINT),
+          { ...getLecture(IDS.DESIGN_SPRINT), part: '1 of 3' },
         ],
       },
       {
         time: TIME_SLOTS['13:00'],
-        events: [{ title: 'Lunch' }],
+        events: [{ title: 'Lunch', color: '#56B949' }],
+        background: '#ffffff',
       },
       {
         time: TIME_SLOTS['14:15'],
         heading: 'Workshops continued',
         events: [
-          getLecture(IDS.MICRO_PYTHON),
-          getLecture(IDS.UNREAL_ENGINE),
-          getLecture(IDS.C_PLUS_PLUS),
-          getLecture(IDS.INTERMEDIATE_PYTHON),
+          { ...getLecture(IDS.MICRO_PYTHON), part: '2 of 3' },
+          { ...getLecture(IDS.UNREAL_ENGINE), part: '2 of 3' },
+          { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
+          { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '2 of 3' },
           getLecture(IDS.AGILE),
-          getLecture(IDS.DESIGN_SPRINT),
+          { ...getLecture(IDS.DESIGN_SPRINT), part: '2 of 3' },
         ],
       },
       {
@@ -559,7 +578,8 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['19:00'],
-        events: [{ title: 'Dinner' }],
+        events: [{ title: 'Dinner', color: '#56B949' }],
+        background: '#ffffff',
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -575,12 +595,12 @@ export const schedule = [
         time: TIME_SLOTS['09:00'],
         heading: HEADINGS.WORKSHOPS,
         events: [
-          getLecture(IDS.MICRO_PYTHON),
-          getLecture(IDS.UNREAL_ENGINE),
+          { ...getLecture(IDS.MICRO_PYTHON), part: '3 of 3' },
+          { ...getLecture(IDS.UNREAL_ENGINE), part: '3 of 3' },
           { title: 'Hackathon' },
-          getLecture(IDS.INTERMEDIATE_PYTHON),
+          { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '3 of 3' },
           getLecture(IDS.AGILE),
-          getLecture(IDS.DESIGN_SPRINT),
+          { ...getLecture(IDS.DESIGN_SPRINT), part: '3 of 3' },
         ],
       },
       {
@@ -594,11 +614,12 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['13:00'],
-        events: [{ title: 'Lunch' }],
+        events: [{ title: 'Lunch', color: '#56B949' }],
+        background: '#ffffff',
       },
       {
         time: TIME_SLOTS['14:15'],
-        events: [{ title: 'Summary', highlighted: true }],
+        events: [{ title: 'Summary', color: '#ec384a' }],
       },
       {
         time: TIME_SLOTS['15:00'],
