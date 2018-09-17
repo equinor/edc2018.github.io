@@ -9,6 +9,17 @@ const Wrapper = styled.section`
     `
     background: ${`${background} !important`};
   `};
+  @media (max-width: 600px) {
+    text-align: left;
+    ${({ wrap }) =>
+      wrap &&
+      `
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    `};
+  }
 `;
 
 const Time = styled.h3`
@@ -18,14 +29,16 @@ const Time = styled.h3`
   color: rgb(12, 93, 103);
   font-size: 1.5em;
   font-family: monospace;
-  @media (max-width: 500px) {
-    padding: 10px 0px 0px 10px;
-    font-size: 1em;
+  @media (max-width: 600px) {
+    position: static;
+    padding: 0px;
+    margin: 20px 20px 0px 20px;
   }
 `;
 
 const TimeSlotHeading = styled.h3`
   color: #ec384a;
+  margin: 20px 20px;
 `;
 
 const InnerWrapper = styled.div`
@@ -40,6 +53,10 @@ const InnerWrapper = styled.div`
     height: 100%;
     align-items: center;
   `};
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: start;
+  }
 `;
 
 const EventWrapper = styled.div`
@@ -88,7 +105,7 @@ const Part = styled.p`
 `;
 
 const TimeSlot = ({ time, heading, events, background }) => (
-  <Wrapper background={background}>
+  <Wrapper background={background} wrap={Boolean(heading)}>
     <Time>{time}</Time>
     {heading && <TimeSlotHeading>{heading}</TimeSlotHeading>}
     <InnerWrapper fullHeight={!heading}>

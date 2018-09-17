@@ -498,7 +498,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['13:00'],
         events: [{ title: 'Lunch' }],
-        background: '#C8E7C1',
+        background: '#deffd7',
       },
       {
         time: TIME_SLOTS['14:15'],
@@ -527,7 +527,7 @@ export const schedule = [
             title: 'Dinner and quiz, delicious tapas and drinks',
           },
         ],
-        background: '#C8E7C1',
+        background: '#deffd7',
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -559,7 +559,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['13:00'],
         events: [{ title: 'Lunch' }],
-        background: '#C8E7C1',
+        background: '#deffd7',
       },
       {
         time: TIME_SLOTS['14:15'],
@@ -580,7 +580,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['19:00'],
         events: [{ title: 'Dinner' }],
-        background: '#C8E7C1',
+        background: '#deffd7',
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -616,7 +616,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['13:00'],
         events: [{ title: 'Lunch' }],
-        background: '#C8E7C1',
+        background: '#deffd7',
       },
       {
         time: TIME_SLOTS['14:15'],

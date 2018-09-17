@@ -8,10 +8,10 @@ const DaySchedule = styled.div`
   display: flex;
   flex-direction: column;
   section:nth-child(even) {
-    background: rgb(239, 239, 239);
+    background: #f9f9f9;
   }
   section:nth-child(odd) {
-    background: rgb(195, 230, 243);
+    background: #dff6ff;
   }
 `;
 
@@ -20,16 +20,17 @@ const DayWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     flex-direction: column;
+    text-align: left;
   }
 `;
 
 const ConferenceDay = styled.h2`
   margin: 0px;
   color: rgb(26, 108, 118);
-  @media (max-width: 500px) {
-    margin: 5px 0px;
+  @media (max-width: 600px) {
+    margin: 5px 10px;
   }
 `;
 
