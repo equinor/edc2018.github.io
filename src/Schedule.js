@@ -35,7 +35,7 @@ const ConferenceDay = styled.h2`
 `;
 
 const CalendarDate = styled(ConferenceDay)`
-  @media (min-width: 501px) {
+  @media (min-width: 601px) {
     ::before {
       content: ' – ';
     }

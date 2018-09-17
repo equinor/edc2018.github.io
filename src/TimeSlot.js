@@ -26,9 +26,8 @@ const Time = styled.h3`
   position: absolute;
   margin: auto;
   padding: 10px 0px 0px 20px;
-  color: rgb(12, 93, 103);
-  font-size: 1.5em;
-  font-family: monospace;
+  font-family: 'Oswald', sans-serif;
+  color: darkslategray;
   @media (max-width: 600px) {
     position: static;
     padding: 0px;
