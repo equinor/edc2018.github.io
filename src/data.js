@@ -332,7 +332,7 @@ export const events = [
     title: 'Unreal Engine',
     subtitle: 'Let’s make games with Unreal Engine!',
     speaker: SPEAKERS.JENS_G_MAGNUS,
-    color: '#EE3769',
+    color: '#EB7B2D',
     description:
       'This workshop is a combination of a tutorial and hackathon. We will go over everything you need to make simple games.\nThis includes\n• The Unreal Engine Editor \n• Programming in Blueprint(Unreal’s visual programming language) \n• Important gameplay classes \n• Materials During the tutorial section of the workshop we will learn by introducing new gameplay elements to template games provided by the engine. When we’re done with that it’s time to get creative!We will use what we’re learned to create our own games.\nUnreal Engine 4 is a powerful tool. The engine can be modified, extended and scripted with C++; something we might touch upon if there is time. It supports VR / AR with all mainstream hardware.\nWorkshop requirements:\n• Somewhat beefy computer, the editor is heavy (but the standard laptop works) \n• UnrealEnginelicense, it’s free, you just need to register at https://www.unrealengine.com \n• Preferably with the Unreal Engine installed\n\t– Do this before the workshop as the installation is at minimum 7GB \n\t– If you run Linux, you need to build the engine from source, this requires a newer version of make, clang, and mono.',
     timeSlots: [

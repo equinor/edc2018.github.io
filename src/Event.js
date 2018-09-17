@@ -8,7 +8,13 @@ const Wrapper = styled.div`
   text-align: left;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  ${({ color }) =>
+    color &&
+    `
+    color: ${color};
+  `};
+`;
 
 const Speaker = styled.h3``;
 
@@ -41,16 +47,21 @@ const When = styled.div`
 
 const Event = ({ match, location }) => {
   const { id } = match.params;
-  const { title, speaker, description, timeSlots, category } = events.find(
-    e => e.id === id
-  );
+  const {
+    title,
+    speaker,
+    description,
+    timeSlots,
+    category,
+    color,
+  } = events.find(e => e.id === id);
   return (
     <div>
       <Header location={location} />
       <Wrapper>
         <What>
           <Category>{category}</Category>
-          <Title>{title}</Title>
+          <Title color={color}>{title}</Title>
         </What>
         {timeSlots.map(({ time, day, date }) => (
           <When key={`${day}@${time}`}>{`${day} – ${date} @ [${time}]`}</When>
