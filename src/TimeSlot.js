@@ -55,10 +55,12 @@ const EventTitle = styled.p`
     `
     text-decoration: underline;
   `} ${({ color }) =>
-    color &&
-    `
+  color &&
+  `
     color: ${color};
-    text-decoration: none;
+  `} ${({ heavyUnderline, color }) =>
+  heavyUnderline &&
+  `
     border-bottom: 5px solid ${color};
     display: inline-block;
   `};
@@ -96,7 +98,11 @@ const TimeSlot = ({ time, heading, events, background }) => (
             <EventWrapper key={id || shortTitle || title}>
               {id ? (
                 <StyledLink to={`/event/${id}/`}>
-                  <EventTitle color={color} underline={id}>
+                  <EventTitle
+                    color={color}
+                    underline={id && !part}
+                    heavyUnderline={id && part}
+                  >
                     {shortTitle || title}
                   </EventTitle>
                   {part && <Part color={color}>{part}</Part>}

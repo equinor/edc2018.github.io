@@ -495,8 +495,8 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['13:00'],
-        events: [{ title: 'Lunch', color: '#56B949' }],
-        background: '#ffffff',
+        events: [{ title: 'Lunch' }],
+        background: '#C8E7C1',
       },
       {
         time: TIME_SLOTS['14:15'],
@@ -523,10 +523,9 @@ export const schedule = [
         events: [
           {
             title: 'Dinner and quiz, delicious tapas and drinks',
-            color: '#56B949',
           },
         ],
-        background: '#ffffff',
+        background: '#C8E7C1',
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -557,8 +556,8 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['13:00'],
-        events: [{ title: 'Lunch', color: '#56B949' }],
-        background: '#ffffff',
+        events: [{ title: 'Lunch' }],
+        background: '#C8E7C1',
       },
       {
         time: TIME_SLOTS['14:15'],
@@ -578,8 +577,8 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['19:00'],
-        events: [{ title: 'Dinner', color: '#56B949' }],
-        background: '#ffffff',
+        events: [{ title: 'Dinner' }],
+        background: '#C8E7C1',
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -614,8 +613,8 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['13:00'],
-        events: [{ title: 'Lunch', color: '#56B949' }],
-        background: '#ffffff',
+        events: [{ title: 'Lunch' }],
+        background: '#C8E7C1',
       },
       {
         time: TIME_SLOTS['14:15'],
