@@ -53,9 +53,15 @@ const DAYS = {
 };
 
 const CONFERENCE_DAYS = {
-  DAY_1: 'Day 1 — Tuesday September 25',
-  DAY_2: 'Day 2 — Wednesday September 26',
-  DAY_3: 'Day 3 — Thursday September 27',
+  DAY_1: 'Day 1',
+  DAY_2: 'Day 2',
+  DAY_3: 'Day 3',
+};
+
+const CALENDAR_DATE = {
+  TUESDAY: 'Tuesday September 25',
+  WEDNESDAY: 'Wednesday September 26',
+  THURSDAY: 'Thursday September 27',
 };
 
 const IDS = {
@@ -89,7 +95,13 @@ export const events = [
     speaker: SPEAKERS.SIMON_BROWN,
     description:
       'The software development industry has made huge leaps in recent years; with agile, lean, software craftsmanship, evolutionary design and microservices being just a few of the buzzwords we throw around. Despite this, software development teams are often more chaotic than they are self-organising, with the resulting code being more of a mess than was perhaps anticipated. Successful software projects aren’t just about good code though, and sometimes you need to step away from the IDE for a few moments to see the bigger picture.\nThis session is about that bigger picture and is aimed at software developers who want to learn more about software architecture, technical leadership and the balance with agility. This talk will debunk some of the common myths as we look at five things every developer should know about software architecture; a guide to software architecture on modern software projects that’s pragmatic rather than academic and lightweight rather than “enterprisey”.',
-    timeSlots: [{ time: TIME_SLOTS['09:00'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['09:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.KEYNOTE,
   },
   {
@@ -99,7 +111,13 @@ export const events = [
     speaker: SPEAKERS.JORN_OLMHEIM,
     description:
       'Elixir is a dynamic, functional language designed for building scalable and maintainable applications. Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.\nThis talk will give an introduction to the language, the interactive execution environment, as well as the scripting and applications modes that Elixir can be used in. This will be an introduction and is intended for beginners, thus no prior knowledge of Elixir or functional programming is required.',
-    timeSlots: [{ time: TIME_SLOTS['10:15'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.LANGUAGE,
   },
   {
@@ -109,7 +127,13 @@ export const events = [
     speaker: SPEAKERS.JORGEN_KVALSVIK,
     description:
       'Welcome to a hands-on session where we will crowdsource programs solving real problems in Haskell, a wonderful non-strict purely functional programming language. Both Haskell and mob programming is a great way to apply yourself, and to pick up a few refreshing ideas on computation and programs on the way.\nIt will be an interactive session where we together solve problems and write programs, through discussions and suggestions from the participants.\nBringing a laptop is optional (all programs will be compiled and run on the instructor’s computer), but you’re free to bring your own computer to try out snippets and programs yourself.',
-    timeSlots: [{ time: TIME_SLOTS['10:15'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.LANGUAGE,
   },
   {
@@ -119,7 +143,13 @@ export const events = [
     speaker: SPEAKERS.ERIK_PARMANN,
     description:
       'We will look into Lisp in several of its beautiful variants. After this little crash course you should be able to uphold polite smalltalk about some of the different lisps, a bit of their history, and how to program in them. You will be able to make snarky remarks to Pythonists about their lack of macros and how Python is actually just a poor man’s Lisp without homoiconicity, and you will learn what that word means.',
-    timeSlots: [{ time: TIME_SLOTS['10:15'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.LANGUAGE,
   },
   {
@@ -129,7 +159,13 @@ export const events = [
     speaker: SPEAKERS.MARKUS_FANEBUST_DREGI,
     description:
       'We will start this session by giving an introduction to the extremely small language Brainfuck. We will then discuss the technical implications of Brainfuck being Turing complete, as well as ponder over its connection to life, Game of Life, amoebas and emerging intelligence (artifical or not).\nTo finish off with something concrete we will pair program Brainfuck. If you bring your best and work hard, you might be able to add two integers by the end of the session (no kidding).\nBringing a laptop is beneficial. But to be honest, development time will be king. So you will not lose that much time by emulating on paper.',
-    timeSlots: [{ time: TIME_SLOTS['10:15'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.LANGUAGE,
   },
   {
@@ -139,7 +175,13 @@ export const events = [
     speaker: SPEAKERS.SIMON_BROWN,
     description:
       'It’s very likely that the majority of the software architecture diagrams you’ve seen are a confused mess of boxes and lines. Following the publication of the Manifesto for Agile Software Development in 2001, teams have abandoned UML, discarded the concept of modelling and instead place a heavy reliance on conversations centered around incoherent whiteboard diagrams or shallow “Marketecture” diagrams created with Visio. Moving fast and being agile requires good communication, yet software development teams struggle with this fun- damental skill. A good set of software architecture diagrams are priceless for aligning a team around a shared vision and for getting new-joiners productive fast.\nThis session explores the visual communication of software architecture and is based upon a decade of my experiences working with software development teams large and small across the globe. We’ll look at what is commonplace today, the importance of creating a shared vocabulary, diagram notation, and the value of creating a lightweight model to describe your software system using the ”C4 model”, which I created as a way to help software development teams describe and communicate software architecture, both during up - front design sessions and when retrospectively documenting an existing codebase.',
-    timeSlots: [{ time: TIME_SLOTS['10:15'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['10:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.LANGUAGE,
   },
   {
@@ -149,9 +191,14 @@ export const events = [
     speaker: SPEAKERS.CARSTEN_FALK_HAMMERSHOJ,
     description:
       'What is 3D printing and where do you start?\nWhich desktop printers exist and what do you need to consider before you pur - chase one? What materials are needed for printing. Which maker communities for 3D printing are there? What are the opportunities for Equinor?\nHow do we design for 3D printing ? We will see tools and do a practical exercise.',
-    timeSlots: [{ time: TIME_SLOTS['15:00'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     day: DAYS['2018-09-25'],
-    conferenceDay: CONFERENCE_DAYS.DAY_1,
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -161,7 +208,13 @@ export const events = [
     speaker: SPEAKERS.SIMON_BROWN,
     description:
       'When we’re having an architecture discussion, we’ll talk about abstractions, using terms like component, module and layer. These abstractions reflect our mental model of a software system, which are useful when describing our architectural ideas and intent. These same abstractions don’t typically exist in the programming languages we use though. There’s no layer keyword in Java, for example. To implement these abstractions, we need to use a combination of the constructs available in our programming languages; such as classes, interfaces, objects, functions, packages, namespaces, files and folders. In many cases, the code that is written doesn’t end up reflecting the model. This is the model-code gap.\nThe model - code gap manifests itself in a number of ways. In obvious cases, the code doesn’t match the architecture diagrams.Sometimes the problems are more subtle though. This session is about the model-code gap, and particularly how it relates to applications that are built from a single monolithic deployment unit.Regardless of how we choose to structure our code(layers, vertical slices, ports and adapters, etc), our best design intentions can be destroyed in a flash if we don’t consider the intricacies of the implementation strategy. The devil is in the implementation details.',
-    timeSlots: [{ time: TIME_SLOTS['15:00'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -171,7 +224,13 @@ export const events = [
     speaker: SPEAKERS.KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD,
     description:
       '\n• A very basic introduction to machine learning.\n• What is it?\n• Whydowedoit?\n• How do we do it (in Python)?\nThere will be some examples shown, we recommend (but don’t require) that you bring your computer with Python installed, so that you can try some things out for yourself.',
-    timeSlots: [{ time: TIME_SLOTS['15:00'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -181,7 +240,13 @@ export const events = [
     speaker: SPEAKERS.OYVIND_RONNE,
     description:
       'In this hands-on session we will create a simple API in Node.js / Express. We’ll discuss design considerations and concepts like naming, versioning, life-cycle management, discoverability, authentication, etc. But mostly we will code and have fun!\nPlease make sure Node.js is installed on your computer beforehand.',
-    timeSlots: [{ time: TIME_SLOTS['15:00'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -190,7 +255,13 @@ export const events = [
     speaker: SPEAKERS.TAHIR_ALI,
     description:
       'The amount of data collected and analyzed has increased rapidly, which has led to an increase in the demand for skills and tools in data processing. With the growth of both the number and size of big data teams, specialized roles begin to be defined. One of these roles is data engineer, which focuses on ensuring that quality data is available for data scientists and analysts to analyze.\nThis talk will give you an introduction to;\n• Data Engineering\n• Data engineering project(s)\n• How we do data engineering in Equinor\n• A demo of Azure Data factory V2',
-    timeSlots: [{ time: TIME_SLOTS['14:15'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['14:15'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.CONTRIBUTED_LECTURE,
   },
   {
@@ -199,7 +270,13 @@ export const events = [
     speaker: SPEAKERS.JON_JAATUN,
     description:
       'What is Design Thinking?\nJon, from the mobility team, gives us a fun introduction to Design Thinking. With practical examples, first one that you can experience yourself in Lego, and later from him and his team’s work for the field of the future.',
-    timeSlots: [{ time: TIME_SLOTS['15:00'], day: CONFERENCE_DAYS.DAY_1 }],
+    timeSlots: [
+      {
+        time: TIME_SLOTS['15:00'],
+        day: CONFERENCE_DAYS.DAY_1,
+        date: CALENDAR_DATE.TUESDAY,
+      },
+    ],
     category: CATEGORIES.MINIWORKSHOP,
   },
   {
@@ -212,6 +289,7 @@ export const events = [
       {
         time: TIME_SLOTS['09:00'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
     ],
     category: CATEGORIES.KEYNOTE,
@@ -227,14 +305,17 @@ export const events = [
       {
         time: TIME_SLOTS['10:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['14:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['09:00'],
         day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -250,14 +331,17 @@ export const events = [
       {
         time: TIME_SLOTS['10:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['14:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['09:00'],
         day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -273,14 +357,17 @@ export const events = [
       {
         time: TIME_SLOTS['10:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['14:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['09:00'],
         day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -295,10 +382,12 @@ export const events = [
       {
         time: TIME_SLOTS['10:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['14:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -314,14 +403,17 @@ export const events = [
       {
         time: TIME_SLOTS['10:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['14:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['09:00'],
         day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -336,6 +428,7 @@ export const events = [
       {
         time: TIME_SLOTS['10:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -350,10 +443,12 @@ export const events = [
       {
         time: TIME_SLOTS['14:15'],
         day: CONFERENCE_DAYS.DAY_2,
+        date: CALENDAR_DATE.WEDNESDAY,
       },
       {
         time: TIME_SLOTS['09:00'],
         day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
       },
     ],
     category: CATEGORIES.WORKSHOP,
@@ -365,6 +460,7 @@ const getLecture = id => events.find(lecture => lecture.id === id);
 export const schedule = [
   {
     conferenceDay: CONFERENCE_DAYS.DAY_1,
+    calendarDate: CALENDAR_DATE.TUESDAY,
     timeSlots: [
       {
         time: TIME_SLOTS['09:00'],
@@ -422,6 +518,7 @@ export const schedule = [
   },
   {
     conferenceDay: CONFERENCE_DAYS.DAY_2,
+    calendarDate: CALENDAR_DATE.WEDNESDAY,
     timeSlots: [
       {
         time: TIME_SLOTS['09:00'],
@@ -472,6 +569,7 @@ export const schedule = [
   },
   {
     conferenceDay: CONFERENCE_DAYS.DAY_3,
+    calendarDate: CALENDAR_DATE.THURSDAY,
     timeSlots: [
       {
         time: TIME_SLOTS['09:00'],

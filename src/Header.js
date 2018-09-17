@@ -36,7 +36,7 @@ const HeaderWrapper = styled.div`
 
 const StyledHeader = styled.header`
   height: 50px;
-  padding: 20px;
+  margin: 20px;
 `;
 
 const ScheduleLink = styled(Link)`

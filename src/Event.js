@@ -17,20 +17,6 @@ const Description = styled.p`
   line-height: 1.4;
 `;
 
-const Day = styled.p`
-  margin: 0px;
-`;
-
-const Time = styled.p`
-  margin: 0px 0px 0px 2px;
-  ::before {
-    content: '@ [';
-  }
-  ::after {
-    content: ']';
-  }
-`;
-
 const Category = styled.h2`
   color: #ec384a;
   margin: 0px 10px 0px 0px;
@@ -50,7 +36,7 @@ const What = styled.div`
 `;
 
 const When = styled.div`
-  display: flex;
+  margin: 0px;
 `;
 
 const Event = ({ match, location }) => {
@@ -66,11 +52,8 @@ const Event = ({ match, location }) => {
           <Category>{category}</Category>
           <Title>{title}</Title>
         </What>
-        {timeSlots.map(({ time, day }) => (
-          <When key={`${day}@${time}`}>
-            <Day>{day}</Day>
-            <Time>{time}</Time>
-          </When>
+        {timeSlots.map(({ time, day, date }) => (
+          <When key={`${day}@${time}`}>{`${day} – ${date} @ [${time}]`}</When>
         ))}
         <Speaker>{speaker}</Speaker>
         <Description>{description}</Description>

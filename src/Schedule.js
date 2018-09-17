@@ -15,8 +15,24 @@ const DaySchedule = styled.div`
   }
 `;
 
+const DayWrapper = styled.div`
+  margin: 30px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
 const DayHeader = styled.h2`
-  padding: 30px 0px;
+  //   margin: 30px 10px;
+  color: rgb(26, 108, 118);
+`;
+
+const CONF_DAY = styled.h2`
+  margin: 0px;
+  color: rgb(26, 108, 118);
+`;
+
+const CAL_DATE = styled.h2`
   margin: 0px;
   color: rgb(26, 108, 118);
 `;
@@ -27,9 +43,12 @@ class Schedule extends Component {
       <div>
         <Header location={this.props.location} />
         <div>
-          {schedule.map(({ conferenceDay, timeSlots }) => (
+          {schedule.map(({ conferenceDay, calendarDate, timeSlots }) => (
             <DaySchedule key={conferenceDay}>
-              <DayHeader>{conferenceDay}</DayHeader>
+              <DayWrapper>
+                <CONF_DAY>{conferenceDay}</CONF_DAY>
+                <CAL_DATE>{` – ${calendarDate}`}</CAL_DATE>
+              </DayWrapper>
               {timeSlots.map(({ time, heading, events, leisure }) => (
                 <TimeSlot
                   key={`${conferenceDay} ${time}`}

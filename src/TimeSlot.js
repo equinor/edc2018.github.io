@@ -12,6 +12,10 @@ const Time = styled.h3`
   padding: 10px 0px 0px 20px;
   color: rgb(12, 93, 103);
   font-size: 1.5em;
+  @media (max-width: 500px) {
+    padding: 10px 0px 0px 10px;
+    font-size: 1em;
+  }
 `;
 
 const TimeSlotHeading = styled.h4`
@@ -23,6 +27,7 @@ const InnerWrapper = styled.div`
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  min-height: 100px;
   ${({ fullHeight }) =>
     fullHeight &&
     `
