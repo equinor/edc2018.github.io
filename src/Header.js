@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const HeaderTitle = styled.h1`
   font-size: 3em;
   color: #ec384a;
+  margin: 20px 0px 0px 0px;
   @media (min-width: 1100px) {
     ::before {
       content: 'Equinor Developer Conference ';
@@ -37,12 +38,11 @@ const Logo = styled.img`
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: -15px 0px;
+  margin: -20px 0px;
 `;
 
 const StyledHeader = styled.header`
-  height: 50px;
-  margin: 20px;
+  margin: 0px 20px;
 `;
 
 const ScheduleLink = styled(Link)`

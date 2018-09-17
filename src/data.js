@@ -64,10 +64,8 @@ const CALENDAR_DATE = {
   THURSDAY: 'Thursday September 27',
 };
 
-const colorPalette = {
-  green: '#f0fff5',
-  blue: '#e9f5f9',
-  pink: '#f9ecf2',
+const COLORS = {
+  LIGHT_YELLOW: '#fff5cb',
 };
 
 const IDS = {
@@ -498,7 +496,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['13:00'],
         events: [{ title: 'Lunch' }],
-        background: '#deffd7',
+        background: COLORS.LIGHT_YELLOW,
       },
       {
         time: TIME_SLOTS['14:15'],
@@ -527,7 +525,7 @@ export const schedule = [
             title: 'Dinner and quiz, delicious tapas and drinks',
           },
         ],
-        background: '#deffd7',
+        background: COLORS.LIGHT_YELLOW,
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -559,7 +557,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['13:00'],
         events: [{ title: 'Lunch' }],
-        background: '#deffd7',
+        background: COLORS.LIGHT_YELLOW,
       },
       {
         time: TIME_SLOTS['14:15'],
@@ -580,7 +578,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['19:00'],
         events: [{ title: 'Dinner' }],
-        background: '#deffd7',
+        background: COLORS.LIGHT_YELLOW,
       },
       {
         time: TIME_SLOTS['21:00'],
@@ -616,7 +614,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['13:00'],
         events: [{ title: 'Lunch' }],
-        background: '#deffd7',
+        background: COLORS.LIGHT_YELLOW,
       },
       {
         time: TIME_SLOTS['14:15'],
