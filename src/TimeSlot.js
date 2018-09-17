@@ -33,6 +33,12 @@ const Time = styled.h3`
     padding: 0px;
     margin: 20px 20px 0px 20px;
   }
+  ::before {
+    content: '[';
+  }
+  ::after {
+    content: ']';
+  }
 `;
 
 const TimeSlotHeading = styled.h3`
