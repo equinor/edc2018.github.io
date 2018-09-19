@@ -21,7 +21,7 @@ const SPEAKERS = {
   ERIK_PARMANN: 'Erik Parmann',
   MARKUS_FANEBUST_DREGI: 'Markus Fanebust Dregi',
   CARSTEN_FALK_HAMMERSHOJ: 'Carsten Falk Hammershøj',
-  KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD: 'Kristian Flikka & Eivind Sjaastad',
+  KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD: 'Kristian Flikka and Eivind Sjaastad',
   OYVIND_RONNE: 'Øyvind Rønne',
   TAHIR_ALI: 'Tahir Ali',
   JON_JAATUN: 'Jon Jaatun',
@@ -228,7 +228,7 @@ export const events = [
     shortTitle: 'Machine learning basics',
     speaker: SPEAKERS.KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD,
     description:
-      '\n• A very basic introduction to machine learning.\n• What is it?\n• Whydowedoit?\n• How do we do it (in Python)?\nThere will be some examples shown, we recommend (but don’t require) that you bring your computer with Python installed, so that you can try some things out for yourself.',
+      '\n• A very basic introduction to machine learning.\n• What is it?\n• Why do we do it?\n• How do we do it (in Python)?\nThere will be some examples shown, we recommend (but don’t require) that you bring your computer with Python installed, so that you can try some things out for yourself.',
     timeSlots: [
       {
         time: TIME_SLOTS['15:00'],
