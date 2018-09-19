@@ -89,6 +89,7 @@ const IDS = {
   DESIGN_SPRINT: 'design_sprint',
   RADIX: 'radix',
   AGILE: 'agile',
+  HACKATHON: 'hackathon',
 };
 
 export const events = [
@@ -330,7 +331,7 @@ export const events = [
     title: 'Unreal Engine',
     subtitle: 'Let’s make games with Unreal Engine!',
     speaker: SPEAKERS.JENS_G_MAGNUS,
-    color: '#EB7B2D',
+    color: '#f58db6',
     description:
       'This workshop is a combination of a tutorial and hackathon. We will go over everything you need to make simple games.\nThis includes\n• The Unreal Engine Editor \n• Programming in Blueprint(Unreal’s visual programming language) \n• Important gameplay classes \n• Materials During the tutorial section of the workshop we will learn by introducing new gameplay elements to template games provided by the engine. When we’re done with that it’s time to get creative!We will use what we’re learned to create our own games.\nUnreal Engine 4 is a powerful tool. The engine can be modified, extended and scripted with C++; something we might touch upon if there is time. It supports VR / AR with all mainstream hardware.\nWorkshop requirements:\n• Somewhat beefy computer, the editor is heavy (but the standard laptop works) \n• UnrealEnginelicense, it’s free, you just need to register at https://www.unrealengine.com \n• Preferably with the Unreal Engine installed\n\t– Do this before the workshop as the installation is at minimum 7GB \n\t– If you run Linux, you need to build the engine from source, this requires a newer version of make, clang, and mono.',
     timeSlots: [
@@ -405,7 +406,7 @@ export const events = [
     title: 'Google Design Sprint',
     speaker: SPEAKERS.KRISTIN_WULFF,
     company: 'Kantega v/ Kristin Wulff',
-    color: '#f58db6',
+    color: '#EB7B2D',
     description:
       'Get to know a practical, and time boxed implementation of Design Thinking from Google Ventures. The methodical five days approach, forces the team to explore a vast space of ideas, and assist you in quickly narrowing them down to the one you really want to test on your users. An agile approach to the design phase, that allows your team to fail fast and shortcuts the idea→learning feedback loop. Do you think we could be more curious and creative in the earlier stages of our projects. Do you think that our projects are agile in name, but not always in practice. Or have you at some point simply experienced that the code you were writing, was an excellent answer, but sadly for the wrong question. Then join in for three×three hours of fun, a new perspective on the design phase, and a pocket full of ideation activities and practices for you and your team.\nPrimarily for: Everyone\nParticipant requirements: Their head and hands.',
     timeSlots: [
@@ -429,11 +430,12 @@ export const events = [
   },
   {
     id: IDS.RADIX,
-    title: 'Radix half day Workshop',
+    title: 'Getting a feel for Radix',
     shortTitle: 'Radix',
-    speaker: '',
+    speaker: SPEAKERS.LARS_KARE_SKJORESTED,
     color: '#EE4035',
-    description: 'TODO: Insert description here!!',
+    description:
+      'The vision/purpose for Omnia Radix is Happy and efficient Software Developers. We want to provide a basic modern cloud native software engineering capability for small teams. Keywords are iterative development, automation CI/CD and monitoring.\nIn this workshop we will build a simple web app using a basic software devel- opment workflow (code, version control, build, test), move the app to Docker containers and eventually deploy the app to the Radix platform.\nThe Radix platform that we will use is very early alpha stage - so expect some manual hurdles. When finished you should have an idea about how a cloud native software development workflow could look like - and what role Radix could play for your team.\nIn the workshop, you can use any programming language that you want to as long as it’s able to run in a Docker container on a Linux architecture. Our example app will be written in Node.JS. If you prefer to follow this “track” - please make sure that Node.JS is installed and running ok - prior to the workshop.\nPre-requisites\nYour own precious developer laptop with\n• Installed and working “programming echo system” of your choice (Node, Python, C#...)\n• Docker installed and working\n• Having a working account on github.com.\n• Git installed and working locally',
     timeSlots: [
       {
         time: TIME_SLOTS['10:15'],
@@ -449,13 +451,28 @@ export const events = [
     shortTitle: 'Agile',
     speaker: SPEAKERS.KNUT_KVARME,
     color: '#EE4035',
-    description: 'TODO: Insert description here!!',
+    description:
+      '4 Themes of Agile:\n\nCreating Better Leaders\nGain knowledge and support in transforming an organisation\'s culture to one of autonomy, self-organisation, and continuous improvement.The goal is to continually rise above the competition while attracting and retaining top talent.\n\nCreating Better Product Owners\nBecome a "product leader" in your business, through learning tools such as product strategy and road-mapping, while using Scrum to maximise your team\'s potential to create iterative, incremental, and innovative products.\n\nCreating Better ScrumMasters\nLearn new skills and techniques that help you become more effective change agent, and validate your role of ScrumMaster® in your world of work.\n\nCreating Better Teams\nDevelop skills so each of your team members is able to take ownership of the opportunity to self-organise, as the Scrum framework suggests. Learn how to manage and get the most out of yourself, your Product Owner, and ScrumMaster.\n\nDetailed schedule will be shared on the day.',
     timeSlots: [
       {
         time: TIME_SLOTS['14:15'],
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
+      {
+        time: TIME_SLOTS['09:00'],
+        day: CONFERENCE_DAYS.DAY_3,
+        date: CALENDAR_DATE.THURSDAY,
+      },
+    ],
+    category: CATEGORIES.WORKSHOP,
+  },
+  {
+    id: IDS.HACKATHON,
+    title: 'Hackathon',
+    description:
+      'Do you have an idea?  Try it out here, either on your own, or with other curious playgrounders.  Mistakes are made to be made; this is the time and place for trying and working on, both good and bad ideas.\nThe C++ slot and the design sprint slot end on day 2, so this slot is especially suited for C++-innovation collaboration.',
+    timeSlots: [
       {
         time: TIME_SLOTS['09:00'],
         day: CONFERENCE_DAYS.DAY_3,
@@ -548,10 +565,10 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MICRO_PYTHON), part: '1 of 3' },
           { ...getLecture(IDS.UNREAL_ENGINE), part: '1 of 3' },
-          { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '1 of 3' },
           { ...getLecture(IDS.RADIX), part: '1 of 1' },
-          { ...getLecture(IDS.DESIGN_SPRINT), part: '1 of 3' },
+          { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
+          { ...getLecture(IDS.DESIGN_SPRINT), part: '1 of 2' },
         ],
       },
       {
@@ -565,10 +582,10 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MICRO_PYTHON), part: '2 of 3' },
           { ...getLecture(IDS.UNREAL_ENGINE), part: '2 of 3' },
-          { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '2 of 3' },
           { ...getLecture(IDS.AGILE), part: '1 of 2' },
-          { ...getLecture(IDS.DESIGN_SPRINT), part: '2 of 3' },
+          { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
+          { ...getLecture(IDS.DESIGN_SPRINT), part: '2 of 2' },
         ],
       },
       {
@@ -596,10 +613,10 @@ export const schedule = [
         events: [
           { ...getLecture(IDS.MICRO_PYTHON), part: '3 of 3' },
           { ...getLecture(IDS.UNREAL_ENGINE), part: '3 of 3' },
-          { title: 'Hackathon', color: '#03D1AB', part: '1 of 1' },
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '3 of 3' },
           { ...getLecture(IDS.AGILE), part: '2 of 2' },
-          { ...getLecture(IDS.DESIGN_SPRINT), part: '3 of 3' },
+          { ...getLecture(IDS.HACKATHON), part: '1 of 1', color: '#03D1AB' },
+          { ...getLecture(IDS.HACKATHON), part: '1 of 1', color: '#EB7B2D' },
         ],
       },
       {
