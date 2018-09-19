@@ -420,11 +420,6 @@ export const events = [
         day: CONFERENCE_DAYS.DAY_2,
         date: CALENDAR_DATE.WEDNESDAY,
       },
-      {
-        time: TIME_SLOTS['09:00'],
-        day: CONFERENCE_DAYS.DAY_3,
-        date: CALENDAR_DATE.THURSDAY,
-      },
     ],
     category: CATEGORIES.WORKSHOP,
   },
