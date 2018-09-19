@@ -28,7 +28,7 @@ const SPEAKERS = {
   OLVE_MAUDAL: 'Olve Maudal',
   SEBASTIAN_ROLL: 'Sebastian Roll',
   JENS_G_MAGNUS: 'Jens G. Magnus',
-  ROBERT_SMALLSHIRE: 'Robert Smallshire',
+  AUSTIN_BINGHAM: 'Austin Bingham',
   KRISTIN_WULFF: 'Kristin Wulff',
   LARS_KARE_SKJORESTED: 'Lars Kåre Skjørestad',
   KNUT_KVARME: 'Knut Kvarme',
@@ -356,8 +356,8 @@ export const events = [
   {
     id: IDS.INTERMEDIATE_PYTHON,
     title: 'Intermediate Python',
-    speaker: SPEAKERS.ROBERT_SMALLSHIRE,
-    company: 'Sixty North v/ Robert Smallshire',
+    speaker: SPEAKERS.AUSTIN_BINGHAM,
+    company: 'Sixty North v/ Austin Bingham',
     color: '#367ABD',
     description:
       'This two day course is designed for developers who already know the funda- mentals of Python. This course will get more ”under the hood” and introduce the students to powerful tools and techniques that go beyond the basics. There are a lot of intermediate topics in Python, and this course can be customized based on need. The class will focus on Python 3 unless Python 2 is specifically requested. \n• We start immediately with working programs. \n• Testing is integral to our approach. \n• Taught on Windows, Linux or Mac OS X. \n• Knowledge level of Python for Programmers course is assumed\nTopics \n• Function and class decorators \n• Closures \n• Creating context managers \n• Packaging and distribution of Python packages \n• Callable objects, lambdas, and extended argument syntax \n• Properties, class methods, and static methods \n• String representations of objects \n• Specialized numeric and scalar types \n• Functional-style programming tools \n• The iteration and iterable protocols \n• Multiple inheritance, method resolution order, and super() \n• Collection protocols and implementing collections \n• Advanced error handling with exceptions \n• Introspection\nComputer Setup:\nThis workshop requires that you bring a laptop with the following software installed: \n• Python 3.3 or greater installed. \n• An editor for Python code.Attendees can use whatever editor they prefer, but we recommend PyCharm which is a full - featured Python IDE \n• The ability to either connect to the Internet or accept USB flash drives so we can distribute course materials on the day.',
