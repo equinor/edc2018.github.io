@@ -73,7 +73,9 @@ const Header = ({ location }) => (
       </NavBar>
     </NavWrapper>
     <HeaderWrapper>
-      <HeaderTitle>2018</HeaderTitle>
+      <Link style={{ textDecoration: 'none' }} to="/">
+        <HeaderTitle>2018</HeaderTitle>
+      </Link>
       <Logo src={logo} alt="Equnior logo" />
     </HeaderWrapper>
   </StyledHeader>
