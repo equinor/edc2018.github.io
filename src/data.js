@@ -195,7 +195,7 @@ export const events = [
     shortTitle: '3D printing',
     speaker: SPEAKERS.CARSTEN_FALK_HAMMERSHOJ,
     description:
-      'What is 3D printing and where do you start?\nWhich desktop printers exist and what do you need to consider before you pur - chase one? What materials are needed for printing. Which maker communities for 3D printing are there? What are the opportunities for Equinor?\nHow do we design for 3D printing ? We will see tools and do a practical exercise.',
+      'What is 3D printing and where do you start?\nWhich desktop printers exist and what do you need to consider before you purchase one? What materials are needed for printing. Which maker communities for 3D printing are there? What are the opportunities for Equinor?\nHow do we design for 3D printing ? We will see tools and do a practical exercise.',
     timeSlots: [
       {
         time: TIME_SLOTS['15:00'],
@@ -447,7 +447,7 @@ export const events = [
     speaker: SPEAKERS.KNUT_KVARME_AND_KASIA_WDANIEC,
     color: '#EE4035',
     description:
-      '4 Themes of Agile:\n\nCreating Better Leaders\nGain knowledge and support in transforming an organisation\'s culture to one of autonomy, self-organisation, and continuous improvement.The goal is to continually rise above the competition while attracting and retaining top talent.\n\nCreating Better Product Owners\nBecome a "product leader" in your business, through learning tools such as product strategy and road-mapping, while using Scrum to maximise your team\'s potential to create iterative, incremental, and innovative products.\n\nCreating Better ScrumMasters\nLearn new skills and techniques that help you become more effective change agent, and validate your role of ScrumMaster® in your world of work.\n\nCreating Better Teams\nDevelop skills so each of your team members is able to take ownership of the opportunity to self-organise, as the Scrum framework suggests. Learn how to manage and get the most out of yourself, your Product Owner, and ScrumMaster.\n\nDetailed schedule will be shared on the day.',
+      '4 Themes of Agile:\n\nCreating Better Leaders\nGain knowledge and support in transforming an organisation\'s culture to one of autonomy, self-organisation, and continuous improvement.The goal is to continually rise above the competition while attracting and retaining top talent.\n\nCreating Better Product Owners\nBecome a "product leader" in your business, through learning tools such as product strategy and road-mapping, while using Scrum to maximise your team\'s potential to create iterative, incremental, and innovative products.\n\nCreating Better ScrumMasters\nLearn new skills and techniques that help you become more effective change agent, and validate your role of ScrumMaster in your world of work.\n\nCreating Better Teams\nDevelop skills so each of your team members is able to take ownership of the opportunity to self-organise, as the Scrum framework suggests. Learn how to manage and get the most out of yourself, your Product Owner, and ScrumMaster.\n\nDetailed schedule will be shared on the day.',
     timeSlots: [
       {
         time: TIME_SLOTS['14:15'],
