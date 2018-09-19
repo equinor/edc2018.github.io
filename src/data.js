@@ -31,7 +31,7 @@ const SPEAKERS = {
   AUSTIN_BINGHAM: 'Austin Bingham',
   KRISTIN_WULFF: 'Kristin Wulff',
   LARS_KARE_SKJORESTED: 'Lars Kåre Skjørestad',
-  KNUT_KVARME: 'Knut Kvarme',
+  KNUT_KVARME_AND_KASIA_WDANIEC: 'Knut Kvarme and Kasia Wdaniec',
 };
 
 const TIME_SLOTS = {
@@ -443,8 +443,8 @@ export const events = [
   {
     id: IDS.AGILE,
     title: 'Agile Workshop',
-    shortTitle: 'Agile',
-    speaker: SPEAKERS.KNUT_KVARME,
+    shortTitle: 'Agile Workshop',
+    speaker: SPEAKERS.KNUT_KVARME_AND_KASIA_WDANIEC,
     color: '#EE4035',
     description:
       '4 Themes of Agile:\n\nCreating Better Leaders\nGain knowledge and support in transforming an organisation\'s culture to one of autonomy, self-organisation, and continuous improvement.The goal is to continually rise above the competition while attracting and retaining top talent.\n\nCreating Better Product Owners\nBecome a "product leader" in your business, through learning tools such as product strategy and road-mapping, while using Scrum to maximise your team\'s potential to create iterative, incremental, and innovative products.\n\nCreating Better ScrumMasters\nLearn new skills and techniques that help you become more effective change agent, and validate your role of ScrumMaster® in your world of work.\n\nCreating Better Teams\nDevelop skills so each of your team members is able to take ownership of the opportunity to self-organise, as the Scrum framework suggests. Learn how to manage and get the most out of yourself, your Product Owner, and ScrumMaster.\n\nDetailed schedule will be shared on the day.',
