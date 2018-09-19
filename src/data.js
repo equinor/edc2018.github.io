@@ -242,7 +242,7 @@ This session explores the visual communication of software architecture and is b
   {
     id: IDS.API_WORKSHOP,
     title: 'API workshop',
-    shortTitle: 'Omnia API workshop',
+    shortTitle: 'API workshop',
     speaker: SPEAKERS.OYVIND_RONNE,
     description:
       'In this hands-on session we will create a simple API in Node.js / Express. We’ll discuss design considerations and concepts like naming, versioning, life-cycle management, discoverability, authentication, etc. But mostly we will code and have fun!\nPlease make sure Node.js is installed on your computer beforehand.',
