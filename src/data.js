@@ -244,7 +244,12 @@ export const events = [
     shortTitle: 'API workshop',
     speaker: SPEAKERS.OYVIND_RONNE,
     description:
-      'In this hands-on session we will create a simple API in Node.js / Express. We’ll discuss design considerations and concepts like naming, versioning, life-cycle management, discoverability, authentication, etc. But mostly we will code and have fun!\nPlease make sure Node.js is installed on your computer beforehand.',
+      'In this hands-on session we will create a simple REST API using JavaScript and Node.js and deploy it to Azure / OMNIA.\n' +
+      'We will look into creating an API specification using Swagger / OpenAPI Specification.\n' +
+      'If we have time, we will also try setting it up in Azure API management. \n' +
+      'There will not be many slides, mostly we will code and have fun!\n' +
+      '\n' +
+      'Please make sure Node.js and Postman is installed on your computer beforehand, and that you are able to turn off any proxy settings you normally need within the Equinor network.',
     timeSlots: [
       {
         time: TIME_SLOTS['15:00'],
