@@ -75,7 +75,7 @@ const COLORS = {
 };
 
 const IDS = {
-  KEYNOTE_SOFTWARE_ACRHITECTURE: 'keynote_software_architecture',
+  KEYNOTE_SOFTWARE_ARCHITECTURE: 'keynote_software_architecture',
   ELIXIR: 'elixir',
   HASKELL: 'haskell',
   LISP: 'lisp',
@@ -100,7 +100,7 @@ const IDS = {
 
 export const events = [
   {
-    id: IDS.KEYNOTE_SOFTWARE_ACRHITECTURE,
+    id: IDS.KEYNOTE_SOFTWARE_ARCHITECTURE,
     title:
       'Five things every developer should know about software architecture',
     speaker: SPEAKERS.SIMON_BROWN,
@@ -504,7 +504,7 @@ export const schedule = [
       {
         time: TIME_SLOTS['09:00'],
         heading: HEADINGS.KEYNOTE,
-        events: [getLecture(IDS.KEYNOTE_SOFTWARE_ACRHITECTURE)],
+        events: [getLecture(IDS.KEYNOTE_SOFTWARE_ARCHITECTURE)],
       },
       {
         time: TIME_SLOTS['10:15-12:00'],
