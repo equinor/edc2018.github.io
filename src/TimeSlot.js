@@ -107,14 +107,14 @@ const Speaker = styled.p`
 `;
 
 const TimeSlot = ({ time, heading, events, background }) => (
-  <Wrapper background={background} wrap={Boolean(heading)}>
+  <Wrapper background={background} wrap={heading}>
     <Time>{time}</Time>
     {heading && <TimeSlotHeading>{heading}</TimeSlotHeading>}
     <InnerWrapper fullHeight={!heading}>
       {events &&
         events.map(
-          ({ id, title, speaker, shortTitle, company, color, part }) => (
-            <EventWrapper key={id || shortTitle || title}>
+          ({ key, id, title, speaker, shortTitle, company, color, part }) => (
+            <EventWrapper key={key || id || shortTitle || title}>
               {id ? (
                 <StyledLink to={`/event/${id}/`}>
                   <EventTitle

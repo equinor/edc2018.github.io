@@ -4,7 +4,7 @@ import Schedule from './Schedule';
 import Event from './Event';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={Schedule} />
       <Route path="/event/:id/" component={Event} />

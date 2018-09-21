@@ -18,7 +18,7 @@ const Title = styled.h2`
 
 const Speaker = styled.h3``;
 
-const Description = styled.p`
+const Description = styled.div`
   max-width: 900px;
   line-height: 1.4;
 `;
