@@ -314,7 +314,9 @@ export const events = [
           'If we have time, we will also try setting it up in Azure API management. \n' +
           'There will not be many slides, mostly we will code and have fun!\n' +
           '\n' +
-          'Please make sure Node.js and Postman is installed on your computer beforehand, and that you are able to turn off any proxy settings you normally need within the Equinor network.'}
+          'Please make sure Node.js and Postman is installed on your computer beforehand, and that you are able to turn off any proxy ' +
+          'settings you normally need within the Equinor network. You also need the role OMNIA Developer in AccessIT.'
+        }
       </p>
     ),
     timeSlots: [
