@@ -36,10 +36,11 @@ const SPEAKERS = {
 
 const TIME_SLOTS = {
   '08:15-08:45': '08:15 — 08:45',
+  '08:45-09:00': '08:45 — 09:00',
   '09:00': '09:00',
+  '09:00-10:00': '09:00 — 10:00',
   '09:00-12:00': '09:00 — 12:00',
   '09:15': '09:15',
-  '09:00-10:00': '09:00 — 10:00',
   '10:15': '10:15',
   '10:15-12:00': '10:15 — 12:00',
   '12:15': '12:15',
@@ -71,7 +72,17 @@ const CALENDAR_DATE = {
 };
 
 const COLORS = {
-  LIGHT_YELLOW: '#fff5cb',
+  ENERGY_RED: '#ff1243',
+  WHITE: '#ffffff',
+  BLACK: '#333333',
+  SLATE_BLUE: '#243746',
+  HERITAGE_RED: '#7d0023',
+  MOSS_GREEN: '#007079',
+  MIST_BLUE: '#d5eaf4',
+  SPRUCE_WOOD: '#ffe7d6',
+  LICHEN_GREEN: '#e6faec',
+
+  LIGHT_YELLOW: '#fff5cb'
 };
 
 const IDS = {
@@ -108,7 +119,7 @@ export const events = [
       'The software development industry has made huge leaps in recent years; with agile, lean, software craftsmanship, evolutionary design and microservices being just a few of the buzzwords we throw around. Despite this, software development teams are often more chaotic than they are self-organising, with the resulting code being more of a mess than was perhaps anticipated. Successful software projects aren’t just about good code though, and sometimes you need to step away from the IDE for a few moments to see the bigger picture.\nThis session is about that bigger picture and is aimed at software developers who want to learn more about software architecture, technical leadership and the balance with agility. This talk will debunk some of the common myths as we look at five things every developer should know about software architecture; a guide to software architecture on modern software projects that’s pragmatic rather than academic and lightweight rather than “enterprisey”.',
     timeSlots: [
       {
-        time: TIME_SLOTS['09:00'],
+        time: TIME_SLOTS['09:00-10:00'],
         day: CONFERENCE_DAYS.DAY_1,
         date: CALENDAR_DATE.TUESDAY,
       },
@@ -502,7 +513,12 @@ export const schedule = [
         background: COLORS.LIGHT_YELLOW,
       },
       {
-        time: TIME_SLOTS['09:00'],
+        time: TIME_SLOTS['08:45-09:00'],
+        events: [{ title: 'Welcome to EDC2018' }],
+        background: COLORS.SPRUCE_WOOD,
+      },
+      {
+        time: TIME_SLOTS['09:00-10:00'],
         heading: HEADINGS.KEYNOTE,
         events: [getLecture(IDS.KEYNOTE_SOFTWARE_ARCHITECTURE)],
       },
@@ -569,6 +585,11 @@ export const schedule = [
         time: TIME_SLOTS['08:15-08:45'],
         events: [{ title: 'Good morning' }],
         background: COLORS.LIGHT_YELLOW,
+      },
+      {
+        time: TIME_SLOTS['08:45-09:00'],
+        events: [{ title: 'Introducing workshops' }],
+        background: COLORS.SPRUCE_WOOD,
       },
       {
         time: TIME_SLOTS['09:00-10:00'],
