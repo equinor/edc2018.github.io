@@ -308,10 +308,33 @@ export const events = [
   },
   {
     id: IDS.KEYNOTE_FEEDBACK_DRIVEN_DEVELOPMENT,
-    title: 'Feedback driven development',
+    shortTitle: 'Feedback-driven Product Development',
+    title: 'Feedback-driven Product Development\n' +
+             'How we do it at Lysaker and how you can design your own system',
     speaker: SPEAKERS.OLVE_MAUDAL,
     description:
-      'For any non-trivial project: Software development should be considered a continuous learning process and a cooperative game of communication between professionals. Effective software development can be achieved through fre- quently repeating cycles of preparing, changing, observing, reflecting, and learning.\nWhile the statement above is obvious to many, it is easy to miss the key points.For instance, you must make sure that you facilitate the learning process by implementing effective feedback mechanisms, do frequent iterations and be willing to re - plan the project continuously.You must also implement information radiators, enable osmotic communication, and get rid of things that hinders communication (yes, I am a fan of Alistair Cockburn). But first of all, you must assume that your developers are professionals that know what to do given a vision, trust and enough information. You should certainly not treat your developers as mere resources that need to be directed and told what to do and how to do it.',
+      'Cisco’s development and innovation centre in Norway (Lysaker) develops ' +
+        'videoconferencing products, telepresence technology and collaboration ' +
+        'solutions. This is embedded product development involving advanced ' +
+        'mechanics, customised electronics, movable parts and millions of lines ' +
+        'of software mostly written in C and C++. Over the last two decades we ' +
+        'have gradually established a workflow that very much supports lean and ' +
+        'agile product development for hundreds of engineers working closely ' +
+        'together. A lot of effort goes into establishing effective feedback ' +
+        'loops guiding the whole development process. We are not only talking ' +
+        'about rapid feedback from build systems and continuous integration, but ' +
+        'also from regression tests, advanced scenario testing and real ' +
+        'users. The focus on establishing feedback loops goes beyond the product ' +
+        'development workflow, it is a principle applicable to the whole ' +
+        'organization. ' +
+        '\n\n' +
+        'This talk will present a concrete insight into the software development ' +
+        'workflow that we are using today, before discussing what you need to ' +
+        'consider if you want to set up an equally effective feedback-driven ' +
+        'product development workflow in your organization. The talk is relevant ' +
+        'for everyone involved product development where software is a key ' +
+        'component.'
+      ,
     timeSlots: [
       {
         time: TIME_SLOTS['09:00-10:00'],
