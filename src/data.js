@@ -540,7 +540,7 @@ export const events = [
     description: (
       <p>
         {
-          'Get to know a practical, and time boxed implementation of Design Thinking from Google Ventures. The methodical five days approach, forces the team to explore a vast space of ideas, and assist you in quickly narrowing them down to the one you really want to test on your users. An agile approach to the design phase, that allows your team to fail fast and shortcuts the idea→learning feedback loop. Do you think we could be more curious and creative in the earlier stages of our projects. Do you think that our projects are agile in name, but not always in practice. Or have you at some point simply experienced that the code you were writing, was an excellent answer, but sadly for the wrong question. Then join in for 2×three hours of fun, a new perspective on the design phase, and a pocket full of ideation activities and practices for you and your team.\nPrimarily for: Everyone\nParticipant requirements: Their head and hands.'
+          'Get to know a practical, and time boxed implementation of Design Thinking from Google Ventures. The methodical five days approach, forces the team to explore a vast space of ideas, and assist you in quickly narrowing them down to the one you really want to test on your users. An agile approach to the design phase, that allows your team to fail fast and shortcuts the idea→learning feedback loop. Do you think we could be more curious and creative in the earlier stages of our projects. Do you think that our projects are agile in name, but not always in practice. Or have you at some point simply experienced that the code you were writing, was an excellent answer, but sadly for the wrong question. Then join in for three hours of fun, a new perspective on the design phase, and a pocket full of ideation activities and practices for you and your team.\nPrimarily for: Everyone\nParticipant requirements: Their head and hands.'
         }
       </p>
     ),
@@ -733,7 +733,7 @@ export const schedule = [
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '1 of 3' },
           { ...getLecture(IDS.RADIX), part: '1 of 1' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '1 of 2' },
-          { ...getLecture(IDS.DESIGN_SPRINT), part: '1 of 2' },
+          { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
         ],
       },
       {
@@ -750,7 +750,7 @@ export const schedule = [
           { ...getLecture(IDS.INTERMEDIATE_PYTHON), part: '2 of 3' },
           { ...getLecture(IDS.AGILE), part: '1 of 2' },
           { ...getLecture(IDS.C_PLUS_PLUS), part: '2 of 2' },
-          { ...getLecture(IDS.DESIGN_SPRINT), part: '2 of 2' },
+          { ...getLecture(IDS.DESIGN_SPRINT), part: '3 hrs workshop' },
         ],
       },
       {
