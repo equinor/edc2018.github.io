@@ -198,8 +198,8 @@ export const events = [
   },
   {
     id: IDS.BRAINFUCK,
-    title: 'Minimalistic languages and their implications',
-    shortTitle: 'Brainfuck',
+    title: 'Minimalistic turing complete languages and their implications',
+    shortTitle: 'From Turing to Brainfuck',
     speaker: SPEAKERS.MARKUS_FANEBUST_DREGI,
     description: (
       <p>
@@ -315,8 +315,7 @@ export const events = [
           'There will not be many slides, mostly we will code and have fun!\n' +
           '\n' +
           'Please make sure Node.js and Postman is installed on your computer beforehand, and that you are able to turn off any proxy ' +
-          'settings you normally need within the Equinor network. You also need the role Data Platform Developer (OMNIA DATA PLATFORM) in AccessIT.'
-        }
+          'settings you normally need within the Equinor network. You also need the role Data Platform Developer (OMNIA DATA PLATFORM) in AccessIT.'}
       </p>
     ),
     timeSlots: [
@@ -568,7 +567,7 @@ export const events = [
       <p>
         {
           'The vision/purpose for Omnia Radix is Happy and efficient Software Developers. We want to provide a basic modern cloud native software engineering capability for small teams. Keywords are iterative development, automation CI/CD and monitoring.\n\nIn this workshop we will build a simple web app using a basic software devel- opment workflow (code, version control, build, test), move the app to Docker containers and eventually deploy the app to the Radix platform.\n\nThe Radix platform that we will use is very early alpha stage - so expect some manual hurdles. When finished you should have an idea about how a cloud native software development workflow could look like - and what role Radix could play for your team.\n\nIn the workshop, you can use any programming language that you want to as long as it’s able to run in a Docker container on a Linux architecture. Our example app will be written in Node.JS. If you prefer to follow this “track” - please make sure that Node.JS is\n\nWho is this workshop for?\n\nSoftware developers & Coding Data Scientists. You have at least one echo system that you know quite good. You know git. You have some knowledge of Web development (http) You have played around with Docker. You are searching for a good way to deploy your applications and webservices. You want to get started - or continue with - CI/CD, and want this to be as easy as possible. You have at least one cool sticker on your laptop!\n\nPre-requisites\nYour own precious developer laptop with the following installed and working\n• Development echo system of your choice (Node, Python, C#...). The examples in the workshop will be using node.js.\n• Docker installed and working\n• Having a active account on github.com and a working ssh regime with github.com\n• Git installed and working locally\n• ssh-keygen installed and working\n\nThe full script of the workshop is available on https://github.com/larskaare/edcradix/blob/master/docs/radixintro.md\n\nHead over to equinor.slack.com and join the channel #omnia_radix_edc2018 for in-workshop communication'
-          }
+        }
       </p>
     ),
     timeSlots: [
