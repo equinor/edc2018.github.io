@@ -115,7 +115,7 @@ export const events = [
   {
     id: IDS.KEYNOTE_SOFTWARE_ARCHITECTURE,
     title:
-      'Five things every developer should know about software architecture',
+      'Five things every developer should know about software architecture (Air London & NewYork)',
     speaker: SPEAKERS.SIMON_BROWN,
     description: (
       <p>
@@ -135,8 +135,8 @@ export const events = [
   },
   {
     id: IDS.ELIXIR,
-    title: 'Introduction to Elixir',
-    shortTitle: 'Elixir',
+    title: 'Introduction to Elixir (Robinson)',
+    shortTitle: 'Elixir (Robinson)',
     speaker: SPEAKERS.JORN_OLMHEIM,
     description: (
       <p>
@@ -156,8 +156,8 @@ export const events = [
   },
   {
     id: IDS.HASKELL,
-    title: 'Crowdsourced Haskell',
-    shortTitle: 'Haskell',
+    title: 'Crowdsourced Haskell (Sky2)',
+    shortTitle: 'Haskell (Sky2)',
     speaker: SPEAKERS.JORGEN_KVALSVIK,
     description: (
       <p>
@@ -177,8 +177,8 @@ export const events = [
   },
   {
     id: IDS.LISP,
-    title: 'Schemy listy lispy lisps',
-    shortTitle: 'Lisp',
+    title: 'Schemy listy lispy lisps (Airbus)',
+    shortTitle: 'Lisp (Airbus)',
     speaker: SPEAKERS.ERIK_PARMANN,
     description: (
       <p>
@@ -198,8 +198,8 @@ export const events = [
   },
   {
     id: IDS.BRAINFUCK,
-    title: 'Minimalistic turing complete languages and their implications',
-    shortTitle: 'From Turing to Brainfuck',
+    title: 'Minimalistic turing complete languages and their implications (Bell)',
+    shortTitle: 'From Turing to Brainfuck (Bell)',
     speaker: SPEAKERS.MARKUS_FANEBUST_DREGI,
     description: (
       <p>
@@ -219,8 +219,8 @@ export const events = [
   },
   {
     id: IDS.C4,
-    title: 'Visualising software architecture with the C4 model',
-    shortTitle: 'Visualising software architecture',
+    title: 'Visualising software architecture with the C4 model (Sky1)',
+    shortTitle: 'Visualising software architecture (Sky1)',
     speaker: SPEAKERS.SIMON_BROWN,
     description: (
       <p>
@@ -240,8 +240,8 @@ export const events = [
   },
   {
     id: IDS.PRINTING_3D,
-    title: '3D printing — a practical guide to getting started',
-    shortTitle: '3D printing',
+    title: '3D printing — a practical guide to getting started (Robinson)',
+    shortTitle: '3D printing (Robinson)',
     speaker: SPEAKERS.CARSTEN_FALK_HAMMERSHOJ,
     description: (
       <p>
@@ -262,8 +262,8 @@ export const events = [
   },
   {
     id: IDS.MODEL_CODE_GAP,
-    title: 'The model-code gap and Visualising software architecture',
-    shortTitle: 'The model-code gap\nVisualising software architecture',
+    title: 'The model-code gap and Visualising software architecture (Sky1)',
+    shortTitle: 'The model-code gap\nVisualising software architecture (Sky1)',
     speaker: SPEAKERS.SIMON_BROWN,
     description: (
       <p>
@@ -283,8 +283,8 @@ export const events = [
   },
   {
     id: IDS.MACHINE_LEARNING,
-    title: 'Introduction to machine learning',
-    shortTitle: 'Machine learning basics',
+    title: 'Introduction to machine learning (Airbus)',
+    shortTitle: 'Machine learning basics (Airbus)',
     speaker: SPEAKERS.KRISTIAN_FLIKKA_AND_EIVIND_SJAASTAD,
     description: (
       <p>
@@ -304,8 +304,8 @@ export const events = [
   },
   {
     id: IDS.API_WORKSHOP,
-    title: 'API workshop',
-    shortTitle: 'API workshop',
+    title: 'API workshop (Sky2)',
+    shortTitle: 'API workshop (Sky2)',
     speaker: SPEAKERS.OYVIND_RONNE,
     description: (
       <p>
@@ -329,7 +329,7 @@ export const events = [
   },
   {
     id: IDS.OMNIA,
-    title: 'Data enginering in Omnia',
+    title: 'Data enginering in Omnia (Air London+NewYork)',
     speaker: SPEAKERS.TAHIR_ALI,
     description: (
       <p>
@@ -349,7 +349,7 @@ export const events = [
   },
   {
     id: IDS.DESIGN_THINKING,
-    title: 'Design thinking',
+    title: 'Design thinking (Bell)',
     speaker: SPEAKERS.JON_JAATUN,
     description: (
       <p>
@@ -369,7 +369,7 @@ export const events = [
   },
   {
     id: IDS.KEYNOTE_FEEDBACK_DRIVEN_DEVELOPMENT,
-    shortTitle: 'Feedback-driven Product Development',
+    shortTitle: 'Feedback-driven Product Development (Air London+NewYork)',
     title:
       'Feedback-driven Product Development\n' +
       'How we do it at Lysaker and how you can design your own system',
@@ -662,7 +662,7 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['12:15'],
-        events: [{ title: 'Developer Survey QA' }],
+        events: [{ title: 'Developer Survey QA (Air London+NewYork)' }],
       },
       {
         time: TIME_SLOTS['13:00'],
@@ -693,7 +693,7 @@ export const schedule = [
         time: TIME_SLOTS['19:00'],
         events: [
           {
-            title: 'Dinner and quiz, delicious tapas and drinks',
+            title: 'Dinner and quiz, delicious tapas and drinks (Air London+NewYork)',
           },
         ],
         background: COLORS.LIGHT_YELLOW,
