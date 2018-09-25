@@ -410,8 +410,8 @@ export const events = [
   },
   {
     id: IDS.MICRO_PYTHON,
-    title: 'MicroPython',
-    shortTitle: 'μPython',
+    title: 'MicroPython (Sky1)',
+    shortTitle: 'μPython (Sky1)',
     speaker: SPEAKERS.SEBASTIAN_ROLL,
     color: '#844D9E',
     description: (
@@ -442,8 +442,8 @@ export const events = [
   },
   {
     id: IDS.UNREAL_ENGINE,
-    title: 'Unreal Engine',
-    subtitle: 'Let’s make games with Unreal Engine!',
+    title: 'Unreal Engine (Sky2)',
+    subtitle: 'Let’s make games with Unreal Engine!(Sky2)',
     speaker: SPEAKERS.JENS_G_MAGNUS,
     color: '#f58db6',
     description: (
@@ -474,7 +474,7 @@ export const events = [
   },
   {
     id: IDS.INTERMEDIATE_PYTHON,
-    title: 'Intermediate Python',
+    title: 'Intermediate Python (Airbus)',
     speaker: SPEAKERS.AUSTIN_BINGHAM,
     company: 'Sixty North v/ Austin Bingham',
     color: '#367ABD',
@@ -506,7 +506,7 @@ export const events = [
   },
   {
     id: IDS.C_PLUS_PLUS,
-    title: 'A Tour of Modern C++',
+    title: 'A Tour of Modern C++ (Bell)',
     speaker: SPEAKERS.OLVE_MAUDAL,
     color: '#03D1AB',
     description: (
@@ -532,7 +532,7 @@ export const events = [
   },
   {
     id: IDS.DESIGN_SPRINT,
-    title: 'Google Design Sprint',
+    title: 'Google Design Sprint (Air NewYork)',
     speaker: SPEAKERS.KRISTIN_WULFF,
     company: 'Kantega v/ Kristin Wulff',
     color: '#EB7B2D',
@@ -559,8 +559,8 @@ export const events = [
   },
   {
     id: IDS.RADIX,
-    title: 'Getting a feel for Radix',
-    shortTitle: 'Radix',
+    title: 'Getting a feel for Radix (Air London)',
+    shortTitle: 'Radix (Air London)',
     speaker: SPEAKERS.LARS_KARE_SKJORESTED,
     color: '#EE4035',
     description: (
@@ -581,8 +581,8 @@ export const events = [
   },
   {
     id: IDS.AGILE,
-    title: 'Agile Workshop',
-    shortTitle: 'Agile Workshop',
+    title: 'Agile Workshop (Air London)',
+    shortTitle: 'Agile Workshop (Air London)',
     speaker: SPEAKERS.KNUT_KVARME_AND_KASIA_WDANIEC,
     color: '#EE4035',
     description: (
@@ -710,12 +710,12 @@ export const schedule = [
     timeSlots: [
       {
         time: TIME_SLOTS['08:15-08:45'],
-        events: [{ title: 'Good morning' }],
+        events: [{ title: 'Good morning (Air London+NewYork)' }],
         background: COLORS.LIGHT_YELLOW,
       },
       {
         time: TIME_SLOTS['08:45-09:00'],
-        events: [{ title: 'Introducing workshops' }],
+        events: [{ title: 'Introducing workshops (Air London+NewYork)' }],
         background: COLORS.SPRUCE_WOOD,
       },
       {
@@ -797,7 +797,7 @@ export const schedule = [
         time: TIME_SLOTS['12:15'],
         events: [
           {
-            title: 'DCOE and CIT QA',
+            title: 'DCOE and CIT QA (Air London+NewYork)',
             speaker: 'Moderated by Kristian Flikka',
           },
         ],
@@ -809,7 +809,7 @@ export const schedule = [
       },
       {
         time: TIME_SLOTS['14:15'],
-        events: [{ title: 'Summary', color: '#ec384a' }],
+        events: [{ title: 'Summary (Air London+NewYork)', color: '#ec384a' }],
       },
       {
         time: TIME_SLOTS['15:00'],
